@@ -1,0 +1,51 @@
+body{           
+
+    background: url('https://www.bobbibrowncosmetics.com/media/images/account/email-sms-signup-envelope.gif') no-repeat center 285px;
+}
+.text{
+    margin-top:300px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+ 
+    height: 100px;
+    width: 50%;
+    margin: auto;
+    
+}
+.Required{
+    text-align: start;
+}
+.input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    height: 25px;
+    width: 220px;
+}
+.self{
+    font-size: small;
+    text-align: justify;
+    display: flex;
+    height: 30px;
+    width: 95%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.self > button{
+    color:whitesmoke;
+    background-color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.self >p { width: 443px;}
+.self > button:hover{
+    background-color: red;
+}
+.checkbox{
+    height: 15px;
+    margin-left: -100px;
+    margin-right: -100px;
+}
