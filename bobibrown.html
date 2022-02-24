@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .M{
+            text-align: center;
+        }
+        .N{
+            text-align: center;
+            font-style: unset;
+            font-size: 60px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: -25px;
+        }
+        .P{
+            text-align: center;
+            margin-top: -55px; 
+            font-size: 20px;
+        }
+        .imgcountainer{
+            display: flex;
+            height: 530px;
+            width: 90%;
+            border: 1px solid rgb(41, 20, 224);
+            justify-content: space-around;
+            margin: auto;
+        }
+        .imgcountainer > div{
+            height: 500px;
+            width: 400px;
+            display:flex;
+            flex-direction: column;
+        }
+
+        .imgcountainer > div >img {
+            width: 400px;
+            height: 70%;
+        }
+        .imgcountainer > div > button{
+            height: 8850px;
+            width: 50px;
+        }
+        .btn{
+           
+            background-color: black;
+            font-weight: bolder;
+            color: whitesmoke;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(63, 62, 62);
+        }
+
+        @media only screen and (max-width: 600px) {
+            .imgcountainer{
+                display: flex;
+                height: 530px;
+                width: 90%;
+                border: 1px solid rgb(41, 20, 224);
+                justify-content: space-around;
+                margin: auto;
+                flex-direction: column;
+                margin-top: 500px;
+            }
+        }
+
+
+        
+    </style>
+
+
+</head>
+<body>
+    <!-- <p class="M">DATE-N IGHT BEAUTY</p> -->
+    <p class="N">EASY ON THE EYES</p>
+    <p class="P">Three quick steps to creating an eye-catching look that stays the night.</p>
+    <div class="imgcountainer">
+        <div>
+            <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_All_in_the_Eyes_pc_01.jpg"/>
+            <div>
+                <P>ADD CONTRAST</P>
+            </div>
+            <DIV>
+                <P>Swip Long-Wear Cream Shadow Stick in Dusty Mauve all over lids and line with Long-wear Gel Eyeliner in Caviar ink.</P>
+            </DIV>
+            <div>
+                <button class="btn">SHOP LONG-WEAR CREAM SHADOW STICK</button>
+               
+            </div>
+            <div>
+                <button class="btn" style="margin-top:7px">SHOP LONG-WEAR GEL EYELINER</button>
+            </div>
+
+        </div>
+        <div>
+            <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_All_in_the_Eyes_pc_02.jpg"/>
+            <DIV>
+                <P>BLEND IT OUT</P>
+            </DIV>
+            <DIV>
+                <P>Smudge the liner with our Smokey Eyeliner Brush for a soft yet sultry finish.</P>
+            </DIV>
+            <div>
+                <button class="btn">SHOP LONG-WEAR CREAM SHADOW STICK</button>
+               
+            </div>
+
+        </div>
+        <div>
+            <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_All_in_the_Eyes_pc_03.jpg"/>
+            <div>
+                <P>TURN UP THE VOLUME</P>
+            </div>
+            <DIV>
+                <P>Comb smokey Eye Mascara from root to tip for streched-out,Volumised lashes.</P>
+            </DIV>
+            <div>
+                <button class="btn">SHOP LONG-WEAR CREAM SHADOW STICK</button>
+               
+            </div>
+
+        </div>
+       
+      
+      
+       
+
+    </div>
+
+    <script>
+        
+        var body = document.getElementsByTagName("body")[0];
+        console.log(body)
+
+        var m = document.createElement("p");
+        m.innerHTML = "DATE-N IGHT BEAUTY";
+
+        var n = document.createElement("p");
+        n.innerHTML = "EASY ON THE EYES";
+
+        body.appendChild(m);
+        body.appendChild(n);
+    </script>
+   
+
+</body>
+</html>
