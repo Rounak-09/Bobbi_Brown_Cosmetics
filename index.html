@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/32f181d7c4.js" crossorigin="anonymous"></script>
     <title>Cosmetics | Bobbi Brown Cosmetics</title>
     <style>
         body {
             font-family: "BBText Regular",Helvetica,Arial,sans-serif;
+            margin: 0px;
         }
         #container1 {
             color: white;
         }
         #top {
             width: 100%;
-            height: 140px;
+            height: 120px;
             padding-top: 30px;
             display: flex;
             background-color: black;
@@ -27,12 +29,15 @@
         }
         #search {
             font-size: 15px;
+            font-weight: bold;
             width: 150px;
+            margin-bottom: 5px;
             background-color: black;
             border: 0px solid black;
         }
         #find {
-            padding-top: 80px;
+            padding-top: 65px;
+            border-bottom: 1px solid white;
         }
         #discount {
             width: 100%;
@@ -45,19 +50,15 @@
         #products {
             width: 100%;
             height: 520px;
+            display: flex;
             position: relative;
             text-align: left;
         }
         #content {
-            width: 40%;
+            width: 50%;
             position: absolute;
-            padding: 20px;
             bottom: 18%;
-            left: 120px;
-        }
-        #content>h1 {
-            font-size: 50px;
-            font-weight: lighter;
+            left: 200px;
         }
         #left {
             width: 20%;
@@ -73,14 +74,14 @@
             height: 150px;
         }
         #title {
-            width: 40%;
+            width: 345px;
             margin: auto;
         }
-        #title>img {
+        img {
             width: 100%;
         }
         #tabs {
-            padding-top: 70px;
+            padding-top: 50px;
             width: 90%;
             font-size: 14px;
             display: flex;
@@ -100,9 +101,15 @@
             font-weight: bold;
             margin: auto;
         }
-        #products>img {
-            width: 100%;
+        .rightImage {
+            height: 20px;
+        }
+        .rightImage>img {
             height: 100%;
+        }
+        #products>img {
+            height: 100%;
+            width: 50%;
             overflow: hidden;
             object-fit: cover;
         }
@@ -111,21 +118,28 @@
             font-weight: bold;
             padding: 10px;
             margin-top: 60px;
-            border: 0px solid white;
+            border: 1px solid white;
         }
         .icons {
             font-size: 20px;
         }
-        #title2 {
-            font-family: "BBSans Regular",Helvetica,Arial,sans-serif;
+        #container2 {
+            text-align: center;
+        }
+        .title {
             line-height: .95;
             letter-spacing: 1.5px;
-            text-align: center;
             font-size: 50px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        #title2 {
+            margin-top: 15px;
         }
         #tabs2 {
             width: 40%;
             font-size: 14px;
+            padding-top: 30px;
             display: flex;
             justify-content: space-around;
             margin: auto;
@@ -133,10 +147,291 @@
             border-bottom: 1px solid lightgray;
         }
         #products2 {
+            width: 100%;
             display: flex;
+            justify-content: space-around;
+        }
+        #products2>div {
+            width: 25%;
+        }
+        #products2>div>button {
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            font-weight: bold;
+            padding: 10px;
+            width: 150px;
+            font-size: 14px;
+        }
+        #container3 {
+            margin-top: 50px;
+        }
+        #photos3 {
+            width: 85%;
+            display: grid;
+            justify-content: space-between;
+            gap: 40px;
+            margin: auto;
+            grid-template-columns: repeat(3,1fr);
+            padding-top: 30px;
+        }
+        .titleBox {
+            text-align: center;
+        }
+        .shopButton {
+            text-align: center;
+        }
+        .blackButton {
+            background-color: black;
+            border: 1px solid black;
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            margin-top: 15px;
+        }
+        .smallTitle {
+            font-size: 15px;
+        }
+        #container4 {
+            padding-top: 100px;
+            width: 90%;
+            display: flex;
+            margin: auto;
+        }
+        #video {
+            width: 50%;
+        }
+        #video>video {
+            width: 100%;
+        }
+        #text4 {
+            width: 50%;
+        }
+        #text4>div {
+            padding-top: 300px;
+            width: 65%;
+            margin: auto;
+        } 
+        #container5 {
+            margin-top: 50px;
+            width: 100%;
+            display: flex;
+            background-color: black;
+        }
+        #text5 {
+            width: 50%;
+            color: white;
+        }
+        #text5>div {
+            padding-top: 330px;
+            width: 65%;
+            margin: auto;
+        }
+        #photo5 {
+            width: 50%;
+        }
+        #photo5>div {
+            width: 80%;
+            padding: 50px;
+        }
+        .whiteButton {
+            background-color: white;
+            border: 1px solid white;
+            color: black;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+        #title6 {
+            margin-top: 50px;
+        }
+        .titleTop {
+            font-size: 15px;
+        }
+        .paraTop {
+            font-size: 12px;
+        }
+        .paraTitle {
+            margin-top: 0px;
+            font-size: 25px;
+            font-family: "BBSans Regular",Helvetica,Arial,sans-serif;
+        }
+        #body6 {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px;
+            padding-top: 20px;
+            margin: auto;
+        }
+        .blackMargin {
+            margin-top: 0px;
+        }
+        #container7 {
+            margin-top: 50px;
+            text-align: center;
+        }
+        #body7 {
+            width: 83%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            margin: auto;
+        }
+        #body7>div {
+            height: 315px;
+        }
+        #body7>div>img {
+            height: 100%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        .marginExtra {
+            margin-top: 25px;
+        }
+        .black {
+            color: black;
+        }
+        #camera {
+            width: 14px;
+            height: 12px;
+        }
+        .extraWidth {
+            width: 200px;
+        }
+        #link7 {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        #container8 {
+            padding-top: 120px;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            justify-content: space-between;
+            gap: 55px;
+            margin: auto;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .small {
+            font-size: 12px;
+        }
+        #newContainer {
+            width: 100%;
+            height: 700px;
+            margin-top: 60px;
+            display: flex;
+            background-color: black;
+        }
+        #newContainer>div {
+            width: 50%;
+            height: 100%;
+        }
+        #newImage {
+            width: 80%;
+            padding-top: 50px;
+            padding-left: 100px;
+        }
+        #newContent {
+            color: white;
+            width: 70%;
+            padding-top: 180px;
+            margin: auto;
+        }
+        #largeTitle {
+            font-size: 80px;
+        }
+        #footer {
+            width: 100%;
+            height: 570px;
+            color: white;
+            margin-top: 30px;
+            background-color: black;
+        }
+        .blackOption {
+            background-color: black;
+            color: white;
+            padding: 15px 45px;
+            font-size: 14px;
+            border: 1px solid white;
+        }
+        .mediumFont {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #footerContents {
+            display: flex;
+            height: 350px;
+            border-bottom: 1px solid #B7B7B8;
+            padding-top: 40px;
+        }
+        #footerLeft {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #footerRight {
+            width: 50%;
+        }
+        .blackInput {
+            width: 100%;
+        }
+        .blackSubmit {
+            border: 1px solid white;
+            padding: 14px;
+            background-color: black;
+            color: white;
+            margin-top: 15px;
+        }
+        #input {
+            width: 275px;
+            margin: auto;
+        }
+        .blackInput::placeholder {
+            color: white;
+        }
+        .footerIcons {
+            margin-top: 10px;
+            font-size: 30px;
+            padding-right: 15px;
+        }
+        .gap {
+            margin-top: 50px;
+        }
+        #footerBottom {
+            font-size: 15px;
+            padding-top: 30px;
+            color: #B7B7B8;
+            width: 90%;
+            display: flex;
+            margin: auto;
+        }
+        #footerBottom>div {
+            width: 50%;
+        }
+        #bottomTabs {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #bottomTabs>div>div {
+            width: 200px;
+            padding-top: 15px;
+            margin: auto;
+        }
+        #bottomIcon {
+            padding-top: 30px;
+            width: 50px;
         }
     </style>
 </head>
+
+
+
+
 <body>
     <div id="container1">
         <div id="top">
@@ -147,7 +442,6 @@
                 <div id="find">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input id="search" type="text" placeholder="SEARCH">
-                    <hr>
                 </div>
             </div>
             <div id="center">
@@ -167,9 +461,9 @@
             <div id="right">
                 <div>
                     <div><a>JOIN BB<u>ACCESS</u></a></div>
-                    <div><i class="fa-solid fa-location-dot icons"></i></i></div>
-                    <div><i class="fa-regular fa-user icons"></i></div>
-                    <div><i class="fa-solid fa-bag-shopping icons"></i></div>
+                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"></div>
+                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></div>
+                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></div>
                 </div>
             </div>
         </div>
@@ -177,48 +471,311 @@
             <p>Get 15% off your first order plus free shipping everyday when you join BB Access</p>
         </div>
         <div id="products">
-            <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/businessoffashion/4TSXK76GD5C3ZJBNWIP4D5OYL4.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
+            <img src="https://m.bobbibrowncosmetics.com/media/export/cms/VirtualServices/SS21_findyourfoundation.jpg">
             <div id="content">
-                <h1>CORRECT. CONCEAL. ON THE GLIDE.</h1>
-                <p><b></b>NEW Skin Corrector Stick and Skin Concealor Stick colour correct and instanly brighten in two steps for all-day colour-true, crease-proof coverage.</p>
-                <button>SHOP CORRECTOR STCIK</button>
-                <button>SHOP CONCEALOR STICK</button>
+                <p class="smallTitle">NEW</p>
+                <p class="title">ALL-IN <br>SKIN DUO</p>
+                <p>Everything you need for fresh, healthy-looking skin in one full-size set:<br>Vitamin Enriched Face Base and Skin Long-Wear Weightless Foundation SPF 15.</p>
+                <p>A $114 value, yours for $72.</p>
+                <button class="whiteButton">CREATE YOUR SET</button>
             </div>
         </div>
     </div>
     <div id="container2">
-        <div id="title2"><p>GOTTA HAVE IT</p></div>
+        <p id="title2" class="title">GOTTA HAVE IT</p>
         <div id="tabs2">
             <a>NEW</a>
             <a>TRENDING NOW</a>
             <a>SKINCARE</a>
         </div>
         <div id="products2">
+        </div>
+    </div>
+    <div id="newContainer">
+        <div>
+            <div id="newImage">
+                <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_SLWWF_VEFB_pc.jpg">
+            </div>
+        </div>
+        <div>
+            <div id="newContent">
+                <p class="smallTitle">NEW</p>
+                <p class="title" id="largeTitle">ALL-IN <br>SKIN DUO</p>
+                <p>Everything you need for fresh, healthy-looking skin: a full-size set of our bestselling foundation and primer.</p>
+                <p>A $114 value, yours for $72.</p>
+                <button class="whiteButton">CREATE YOUR SET</button>
+            </div>
+        </div>
+    </div>
+    <div id="container3">
+        <div class="titleBox" id="title2">
+            <p class="titleTop">DATE-NIGHT BEAUTY</p>
+            <p class="title">EASY ON THE EYES</p>
+            <p>Three quick steps to creating an eye-catching look that stays the night.</p>
+        </div>
+        <div id="photos3">
             <div>
-                <img src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_EPXL17_600x600_0.jpg">
-                <div>
-                    <p>EXTRA LIGHT BISQUE</p>
-                    <p>SKIN CORRECTOR STICK</p>
-                    <p>Discolouration neutralizer for undereyes and face</p>
+                <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_All_in_the_Eyes_pc_01.jpg">
+                <p class="smallTitle"><b>ADD CONTRAST</b></p>
+                <p>Swipe <b>Long-Wear Cream Shadow Stick in Dusty Mauve</b> all over lids and line with <b>Long-wear Gel Eyeliner in Caviar ink.</b></p>
+                <div class="shopButton">
+                    <button class="blackButton">SHOP LONG-WEAR CREAM SHADOW STICK</button>
+                    <button class="blackButton">SHOP LONG-WEAR GEL EYELINER</button>
                 </div>
             </div>
             <div>
-                <img src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_ERFJ01_600x600_0.jpg">
+                <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_All_in_the_Eyes_pc_02.jpg"/>
+                <p class="smallTitle"><b>BLEND IT OUT</b></p>
+                <p>Smudge the liner with our <b>Smokey Eyeliner Brush</b> for a soft yet sultry finish.</p>
+                <div class="shopButton">
+                    <button class="blackButton">SHOP SMOKEY EYELINER BRUSH</button>
+                </div>
             </div>
             <div>
-                <img src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_ERGC03_600x600_0.jpg">
+                <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_All_in_the_Eyes_pc_03.jpg"/>
+                <p class="smallTitle"><b>TURN UP THE VOLUME</b></p>
+                <p>Comb <b>Smokey Eye Mascara</b> from root to tip for streched-out, volumised lashes.</p>
+                <div class="shopButton">
+                    <button class="blackButton">SHOP SMOKEY EYE MASCARA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container4">
+        <div id="video">
+            <video src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_FlexSet_pc.mp4" autoplay loop muted type="video/mp4"></video>
+        </div>
+        <div id="text4">
+            <div>
+                <p class="title">YOU'RE ALL SET</p>
+                <p>Find everything you need to amplify your glow<br> and create go-to looks in our limited-edition sets.</p>
+                <button class="blackButton">SHOP SETS</button>
+            </div>
+        </div>
+    </div>
+    <div id="container5">
+        <div id="text5">
+            <div>
+                <p class="title">CONNECT <br>WITH A PRO</p>
+                <p>Take your undereye routine to the next level: Book a complimentary Virtual Artistry Consultation to discover personalized tips, tricks, and color-true shades for your best and brightest eyes.</p>
+                <button class="whiteButton">BOOK NOW</button>
+            </div>
+        </div>
+        <div id="photo5">
+            <div>
+                <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_SkinCCStick_VirtualConsultant_pc.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="container6">
+        <div class="titleBox" id="title6">
+            <p class="titleTop">VIRTUAL ARTISTY CONSULTATIONS</p>
+            <p class="title">LEARN FROM THE PROS</p>
+            <p>From trying a new shade to learning new tips, our artists <br>are here to help with complimentary video sessions.</p>
+        </div>
+        <div id="body6">
+            <div>
+                <img src="https://www.bobbibrowncosmetics.com/media/export/cms/VirtualServices/SS21_lookfreshvideocalls.jpg">
+                <p class="paraTop">30 MIN</p>
+                <p class="paraTitle">LOOK FRESH FOR VIDEO CALLS</p>
+                <p>Learn how to look bright eyed and fresh faced in minutes with our pro tips.</p>
+                <button class="blackButton blackMargin">BOOK NOW</button>
+            </div>
+            <div>
+                <img src="https://www.bobbibrowncosmetics.com/media/export/cms/VirtualServices/BB_PC_VirtualServices_LandingPage_Group_Tile2_1_@2x.gif">
+                <p class="paraTop">15 MIN</p>
+                <p class="paraTitle">CORRECT & CONCEAL</p>
+                <p>Look less tired by neutralizing undereye circles to look instantly more awake and bright-eyed using our new Skin Corrector Stick & Skin Concealer Stick.</p>
+                <button class="blackButton blackMargin">BOOK NOW</button>
+            </div>
+            <div>
+                <img src="https://www.bobbibrowncosmetics.com/media/export/cms/VirtualServices/SS21_customizeskincareroutine.jpg">
+                <p class="paraTop">30 MIN</p>
+                <p class="paraTitle">CUSTOMIZE YOUR SKIN CARE ROUTINE</p>
+                <p>Learn how to address your top skin concerns with a professionalized routine curated by an artist.</p>
+                <button class="blackButton blackMargin">BOOK NOW</button>
+            </div>
+        </div>
+    </div>
+    <div id="container7">
+        <div class="titleBox">
+            <p class="title">#BOBBIBROWN COMMUNITY</p>
+            <p>Looking fresh-faced? Let's see it. Mention @bobbibrown and tag #BobbiBrown to share.</p>
+        </div>
+        <div id="body7">
+            <div>
+                <img src="https://z3photorankmedia-a.akamaihd.net/media/9/m/3/9m39xq4/mobile.jpg">
+            </div>
+            <div>
+                <img src="https://photorankmedia-a.akamaihd.net/media/y/p/k/ypkfcu4/mobile.jpg">
+            </div>
+            <div>
+                <img src="https://z2photorankmedia-a.akamaihd.net/media/q/w/u/qwum7y4/mobile.jpg">
+            </div>
+            <div>
+                <img src="https://z1photorankmedia-a.akamaihd.net/media/j/g/a/jgadxi4/mobile.jpg">
+            </div>
+        </div>
+        <div><button class="blackButton marginExtra extraWidth"><img src="https://www.bobbibrowncosmetics.com/media/export/cms/icons/olapic-camera-icon.gif" id="camera"> SHARE YOUR LOOK</button></div>
+        <div class="marginExtra"><a id="link7" class="black" href="">VIEW GALLERY</a></div>
+    </div>
+    <div id="container8">
+        <div>
+            <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/EvergreenServices/BB_HP_Module_PC_Services_03.jpg">
+            <p class="bold">CHAT NOW</p>
+            <p>Chat with a makeup artist to get product recommendations.</p>
+            <a class="black small" href="">CHAT NOW</a>
+        </div>
+        <div>
+            <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/EvergreenServices/BB_HP_Module_PC_Services_05.jpg">
+            <p class="bold">FREE SHIPPING</p>
+            <p>Get free shipping on all orders $65+. Or join Bobbi Brown Club to get free shipping on all orders.</p>
+            <a class="black small" href="">LEARN MORE</a>
+        </div>
+        <div>
+            <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/EvergreenServices/BB_HP_Module_PC_Services_07.jpg">
+            <p class="bold">WE WANT YOU TO LOVE IT</p>
+            <p>That’s why we offer free shipping and returns on all foundations, correctors, concealers, and powders.</p>
+            <a class="black small" href="">LEARN MORE</a>
+        </div>
+        <div>
+            <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/EvergreenServices/BB_HP_Module_PC_Services_09.jpg">
+            <p class="bold">EXCLUSIVE OFFERS</p>
+            <p>Special somethings, just for you.</p>
+            <a class="black small" href="">GET OFFERS</a>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footerContents">
+            <div id="footerLeft">
+                <div>
+                    <p class="bold">NEED HELP?</p>
+                    <p class="mediumFont">Chat with an Artist</p>
+                    <p class="titleTop">Text An Artist</p>
+                    <p class="titleTop">Call Us (877)-310-9222</p>
+                    <p class="titleTop">Shipping & Returns</p>
+                    <p class="titleTop">FAQS</p>
+                    <p class="titleTop">Careers</p>
+                    <select class="blackOption">
+                        <option>CHOOSE LOCATION</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="bold">MY BOBBI BROWN</p>
+                    <p class="titleTop">BB Access</p>
+                    <p class="titleTop">My Account</p>
+                    <p class="titleTop">My Orders</p>
+                    <p class="titleTop">Store Locator</p>
+                </div>
+            </div>
+            <div id="footerRight">
+                <div id="input">
+                    <input type="text" class="blackInput blackSubmit" placeholder="ENTER YOUR EMAIL">
+                    <input type="number" class="blackInput blackSubmit" placeholder="ENTER YOUR MOBILE PHONE">
+                    <button class="blackSubmit">SUBMIT</button>
+                    <div>
+                        <p class="bold gap">FOLLOW US</p>
+                        <i class="fa-brands fa-facebook-f footerIcons"></i>
+                        <i class="fa-brands fa-twitter footerIcons"></i>
+                        <i class="fa-brands fa-youtube footerIcons"></i>
+                        <i class="fa-brands fa-instagram footerIcons"></i>
+                        <i class="fa-brands fa-pinterest footerIcons"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerBottom">
+            <div>
+                <p>© Bobbi Brown Professional Cosmetics, Inc. All worldwide rights reserved.</p>
+            </div>
+            <div id="bottomTabs">
+                <div>
+                    <div><a>Terms & Conditions</a></div>
+                    <div><a>California Do Not Sell My Personal Information</a></div>
+                    <div><a>Accessibility</a></div>
+                </div>
+                <div>
+                    <div><a>Interest Based Ads</a></div>
+                    <div><a>Privacy Policy</a></div>
+                </div>
+                <div id="bottomIcon"><img src="https://www.bobbibrowncosmetics.com/media/images/global/bobbi_access_icon.jpg"></div>
             </div>
         </div>
     </div>
     
 </body>
 </html>
+
+
+
+
 <script>
     var productsArr = [
         {
             image : "https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_EPXL17_600x600_0.jpg",
-            name : "EXTRA LIGHT BISQUE",
-            
+            shade : "EXTRA LIGHT BISQUE",
+            name : "SKIN CORRECTOR STICK",
+            description : "Discoloration neutralizer for undereyes and face",
+            rating : 3,
+            price : 32,
+        },
+        {
+            image : "https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_ERFJ01_600x600_0.jpg",
+            shade : "PORCELAIN",
+            name : "SKIN CORRECTOR STICK",
+            description : "Easy-to-use, long-lasting concealer stick",
+            rating : 1,
+            price : 32,
+        },
+        {
+            image : "https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_ERGC03_600x600_0.jpg",
+            shade : "SUN DIP",
+            name : "LUXE EYE SHADOW",
+            description : "Metallic Shimmer Eye Shadow",
+            rating : 96,
+            price : 38,
         }
     ]
+
+    productsArr.map(function(elem){
+        var mainDiv = document.createElement("div");
+
+        var image = document.createElement("img");
+        image.setAttribute("src", elem.image);
+
+        var shade = document.createElement("h5");
+        shade.innerText = elem.shade;
+
+        var name = document.createElement("h4");
+        name.innerText = elem.name;
+
+        var description = document.createElement("p");
+        description.innerText = elem.description;
+
+        var star1 = document.createElement("i");
+        star1.setAttribute("class","fa-solid fa-star");
+        var star2 = document.createElement("i");
+        star2.setAttribute("class","fa-solid fa-star");
+        var star3 = document.createElement("i");
+        star3.setAttribute("class","fa-solid fa-star");
+        var star4 = document.createElement("i");
+        star4.setAttribute("class","fa-solid fa-star");
+        var star5 = document.createElement("i");
+        star5.setAttribute("class","fa-solid fa-star");
+        star5.innerText = " ("+elem.rating+") ";
+
+        var starDiv = document.createElement("div");
+        starDiv.setAttribute("class","rating");
+        starDiv.append(star1,star2,star3,star4,star5);
+
+        var price = document.createElement("p");
+        price.innerText = "$"+elem.price+".00";
+
+        var button = document.createElement("button");
+        button.innerText = "ADD TO BAG";
+
+        mainDiv.append(image,shade,name,description,starDiv,price,button);
+        document.querySelector("#products2").append(mainDiv);
+    });
 </script>
