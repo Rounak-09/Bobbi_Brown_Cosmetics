@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/32f181d7c4.js" crossorigin="anonymous"></script>
     <title>Cosmetics | Bobbi Brown Cosmetics</title>
     <style>
+        /* Header */
         body {
             font-family: "BBText Regular",Helvetica,Arial,sans-serif;
             margin: 0px;
@@ -26,6 +27,10 @@
             letter-spacing: 2px;
             font-size: 11px;
             font-weight: bold;
+        }
+        a {
+            color: white;
+            text-decoration: none;
         }
         #search {
             font-size: 15px;
@@ -46,19 +51,6 @@
             font-size: 15px;
             padding-top: 1px;
             background-color: rgb(58, 58, 58);
-        }
-        #products {
-            width: 100%;
-            height: 520px;
-            display: flex;
-            position: relative;
-            text-align: left;
-        }
-        #content {
-            width: 50%;
-            position: absolute;
-            bottom: 18%;
-            left: 200px;
         }
         #left {
             width: 20%;
@@ -107,6 +99,21 @@
         .rightImage>img {
             height: 100%;
         }
+        /* Header End */
+        
+        #products {
+            width: 100%;
+            height: 520px;
+            display: flex;
+            position: relative;
+            text-align: left;
+        }
+        #content {
+            width: 50%;
+            position: absolute;
+            bottom: 18%;
+            left: 200px;
+        }
         #products>img {
             height: 100%;
             width: 50%;
@@ -145,6 +152,9 @@
             margin: auto;
             padding-bottom: 10px;
             border-bottom: 1px solid lightgray;
+        }
+        #tabs2>a {
+            color: black;
         }
         #products2 {
             width: 100%;
@@ -345,6 +355,8 @@
         #largeTitle {
             font-size: 80px;
         }
+
+        /* Footer Start */
         #footer {
             width: 100%;
             height: 570px;
@@ -426,6 +438,7 @@
             padding-top: 30px;
             width: 50px;
         }
+        /* Footer End */
     </style>
 </head>
 
@@ -433,11 +446,12 @@
 
 
 <body>
+    <!-- Header Start -->
     <div id="container1">
         <div id="top">
             <div id="left">
                 <div id="email">
-                    <a href="./login.html">EMAIL SIGN UP</a>
+                    <a href="email_sign_up.html">EMAIL SIGN UP</a>
                 </div>
                 <div id="find">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -470,6 +484,9 @@
         <div id="discount">
             <p>Get 15% off your first order plus free shipping everyday when you join BB Access</p>
         </div>
+        <!-- Header End -->
+
+        <!-- Product Showcase -->
         <div id="products">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
             <img src="https://m.bobbibrowncosmetics.com/media/export/cms/VirtualServices/SS21_findyourfoundation.jpg">
@@ -482,6 +499,9 @@
             </div>
         </div>
     </div>
+    <!-- Container-1 End -->
+
+    <!-- Container-2 Start -->
     <div id="container2">
         <p id="title2" class="title">GOTTA HAVE IT</p>
         <div id="tabs2">
@@ -492,6 +512,9 @@
         <div id="products2">
         </div>
     </div>
+    <!-- Container-2 End -->
+
+    <!-- New Container Start -->
     <div id="newContainer">
         <div>
             <div id="newImage">
@@ -508,6 +531,9 @@
             </div>
         </div>
     </div>
+    <!-- New Container End -->
+
+    <!-- Container-3 Start -->
     <div id="container3">
         <div class="titleBox" id="title2">
             <p class="titleTop">DATE-NIGHT BEAUTY</p>
@@ -542,6 +568,9 @@
             </div>
         </div>
     </div>
+    <!-- Container-3 End -->
+
+    <!-- Container-4 Start -->
     <div id="container4">
         <div id="video">
             <video src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_FlexSet_pc.mp4" autoplay loop muted type="video/mp4"></video>
@@ -554,6 +583,9 @@
             </div>
         </div>
     </div>
+    <!-- Container-4 End -->
+
+    <!-- Container-5 Start -->
     <div id="container5">
         <div id="text5">
             <div>
@@ -568,6 +600,9 @@
             </div>
         </div>
     </div>
+    <!-- Container-5 End -->
+
+    <!-- Container-6 Start -->
     <div id="container6">
         <div class="titleBox" id="title6">
             <p class="titleTop">VIRTUAL ARTISTY CONSULTATIONS</p>
@@ -598,6 +633,9 @@
             </div>
         </div>
     </div>
+    <!-- Container-6 End -->
+
+    <!-- Container-7 Start -->
     <div id="container7">
         <div class="titleBox">
             <p class="title">#BOBBIBROWN COMMUNITY</p>
@@ -620,6 +658,9 @@
         <div><button class="blackButton marginExtra extraWidth"><img src="https://www.bobbibrowncosmetics.com/media/export/cms/icons/olapic-camera-icon.gif" id="camera"> SHARE YOUR LOOK</button></div>
         <div class="marginExtra"><a id="link7" class="black" href="">VIEW GALLERY</a></div>
     </div>
+    <!-- Container-7 End -->
+
+    <!-- Container-8 Start -->
     <div id="container8">
         <div>
             <img src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/EvergreenServices/BB_HP_Module_PC_Services_03.jpg">
@@ -646,6 +687,9 @@
             <a class="black small" href="">GET OFFERS</a>
         </div>
     </div>
+    <!-- Container-8 End -->
+
+    <!-- Footer Start -->
     <div id="footer">
         <div id="footerContents">
             <div id="footerLeft">
@@ -703,6 +747,7 @@
             </div>
         </div>
     </div>
+    <!-- Footer End -->
     
 </body>
 </html>
@@ -711,6 +756,7 @@
 
 
 <script>
+    // Creation of Array of Objects
     var productsArr = [
         {
             image : "https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_EPXL17_600x600_0.jpg",
@@ -737,7 +783,8 @@
             price : 38,
         }
     ]
-
+    
+    // Mapping Array of Objects to Container-2
     productsArr.map(function(elem){
         var mainDiv = document.createElement("div");
 
