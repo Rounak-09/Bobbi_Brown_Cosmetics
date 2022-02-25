@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Header */
+        body {
+            font-family: "BBText Regular",Helvetica,Arial,sans-serif;
+            margin: 0px;
+        }
+        #container1 {
+            color: white;
+        }
+        #top {
+            width: 100%;
+            height: 120px;
+            padding-top: 30px;
+            display: flex;
+            background-color: black;
+        }
+        #email {
+            letter-spacing: 2px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        #search {
+            font-size: 15px;
+            font-weight: bold;
+            width: 150px;
+            margin-bottom: 5px;
+            background-color: black;
+            border: 0px solid black;
+        }
+        #find {
+            padding-top: 65px;
+            border-bottom: 1px solid white;
+        }
+        #left {
+            width: 20%;
+            height: 130px;
+            font-size: small;
+        }
+        #left>div {
+            width: 60%;
+            margin: auto;
+        }
+        #center {
+            width: 60%;
+            height: 150px;
+        }
+        #title {
+            width: 345px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+        }
+        #tabs {
+            padding-top: 50px;
+            width: 90%;
+            font-size: 14px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+        }
+        #right {
+            width: 20%;
+            height: 130px;
+        }
+        #right>div {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 1px;
+            font-size: 11px;
+            font-weight: bold;
+            margin: auto;
+        }
+        .rightImage {
+            height: 20px;
+        }
+        .rightImage>img {
+            height: 100%;
+        }
+        /* Header End */
+
+        #box {
+            width: 68%;
+            height: 450px;
+            padding-top: 50px;
+            margin: auto;
+            display: flex;
+            border: 1px solid black;
+        }
+        #leftBox {
+            width: 60%;
+            height: 100%;
+            border: 1px solid blue;
+        }
+        #rightBox {
+            width: 40%;
+            height: 100%;
+            padding-left: 20px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Start -->
+    <div id="container1">
+        <div id="top">
+            <div id="left">
+                <div id="email">
+                    <a href="email_sign_up.html">EMAIL SIGN UP</a>
+                </div>
+                <div id="find">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="search" type="text" placeholder="SEARCH">
+                </div>
+            </div>
+            <div id="center">
+                <div id="title">
+                    <img src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png">
+                </div>
+                <div id="tabs">
+                    <div><a>NEW</a></div>
+                    <div><a>BESTSELLERS</a></div>
+                    <div><a>FACE</a></div>
+                    <div><a>MAKEUP</a></div>
+                    <div><a>SKINCARE</a></div>
+                    <div><a>VIRTUAL SERVICES</a></div>
+                    <div><a>DISCOVER</a></div>
+                </div>
+            </div>
+            <div id="right">
+                <div>
+                    <div><a>JOIN BB<u>ACCESS</u></a></div>
+                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"></div>
+                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></div>
+                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <div id="box">
+            <div id="leftBox">
+                <img src="https://www.bobbibrowncosmetics.com/media/export/cms/offers/BB_Banner_Loyalty_728x90.jpg">
+                <p>SHOPPING BAG</p>
+            </div>
+            <div id="rightBox"></div>
+        </div>
+</body>
+</html>
