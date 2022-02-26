@@ -846,7 +846,9 @@
 
         var button = document.createElement("button");
         button.innerText = "ADD TO BAG";
-        button.addEventListener("click", addToCart(elem));
+        button.addEventListener("click", function(){
+            addToCart(elem);
+        });
 
         mainDiv.append(image,shade,name,description,starDiv,price,button);
         document.querySelector("#products2").append(mainDiv);
@@ -855,6 +857,7 @@
     function addToCart(elem)
     {
         var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+        elem.quantity = 1;
         cartArr.push(elem);
         localStorage.setItem("cartItems", JSON.stringify(cartArr));
     }
