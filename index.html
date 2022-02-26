@@ -296,8 +296,17 @@
             gap: 10px;
             margin: auto;
         }
+        .content7 {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-weight: 550;
+            text-transform: uppercase;
+        }
         #body7>div {
             height: 315px;
+            position: relative;
         }
         #body7>div>img {
             height: 100%;
@@ -360,6 +369,9 @@
         }
         #largeTitle {
             font-size: 80px;
+        }
+        #container8>div>a {
+            text-decoration: underline;
         }
 
         /* Footer Start */
@@ -443,6 +455,9 @@
         #bottomIcon {
             padding-top: 30px;
             width: 50px;
+        }
+        #bottomTabs>div>div>a {
+            color: #B7B7B8;
         }
         /* Footer End */
     </style>
@@ -649,16 +664,20 @@
         </div>
         <div id="body7">
             <div>
-                <img src="https://z3photorankmedia-a.akamaihd.net/media/9/m/3/9m39xq4/mobile.jpg">
+                <img src="https://photorankmedia-a.akamaihd.net/media/e/e/4/ee4teo4/mobile.jpg">
+                <div class="content7">@kamiiilamakeup</div>
             </div>
             <div>
-                <img src="https://photorankmedia-a.akamaihd.net/media/y/p/k/ypkfcu4/mobile.jpg">
+                <img src="https://photorankmedia-a.akamaihd.net/media/n/j/s/njs6gs4/mobile.jpg">
+                <div class="content7">@romyglow</div>
             </div>
             <div>
-                <img src="https://z2photorankmedia-a.akamaihd.net/media/q/w/u/qwum7y4/mobile.jpg">
+                <img src="https://photorankmedia-a.akamaihd.net/media/a/h/e/ahei6q4/mobile.jpg">
+                <div class="content7">@paulaosma</div>
             </div>
             <div>
-                <img src="https://z1photorankmedia-a.akamaihd.net/media/j/g/a/jgadxi4/mobile.jpg">
+                <img src="https://z3photorankmedia-a.akamaihd.net/media/p/a/u/pausfz4/mobile.jpg">
+                <div class="content7">@bbpro_jp_miki.fujima</div>
             </div>
         </div>
         <div><button class="blackButton marginExtra extraWidth"><img src="https://www.bobbibrowncosmetics.com/media/export/cms/icons/olapic-camera-icon.gif" id="camera"> SHARE YOUR LOOK</button></div>
@@ -827,8 +846,16 @@
 
         var button = document.createElement("button");
         button.innerText = "ADD TO BAG";
+        button.addEventListener("click", addToCart(elem));
 
         mainDiv.append(image,shade,name,description,starDiv,price,button);
         document.querySelector("#products2").append(mainDiv);
     });
+
+    function addToCart(elem)
+    {
+        var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+        cartArr.push(elem);
+        localStorage.setItem("cartItems", JSON.stringify(cartArr));
+    }
 </script>
