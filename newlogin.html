@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/32f181d7c4.js" crossorigin="anonymous"></script>
+    <title>Cosmetics | Bobbi Brown Cosmetics</title>
+    <style>
+        /* Header */
+        body {
+            font-family: "BBText Regular",Helvetica,Arial,sans-serif;
+            margin: 0px;
+        }
+        #container1 {
+            color: white;
+        }
+        #top {
+            width: 100%;
+            height: 120px;
+            padding-top: 30px;
+            display: flex;
+            background-color: black;
+        }
+        #email {
+            letter-spacing: 2px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        #search {
+            font-size: 15px;
+            font-weight: bold;
+            width: 150px;
+            margin-bottom: 5px;
+            background-color: black;
+            border: 0px solid black;
+        }
+        #find {
+            padding-top: 65px;
+            height: 20px;
+            display: flex;
+            padding-bottom: 5px;
+            border-bottom: 1px solid white;
+        }
+        #find>img {
+            height: 100%;
+        }
+        #discount {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            font-size: 15px;
+            padding-top: 1px;
+            background-color: rgb(58, 58, 58);
+        }
+        #left {
+            width: 20%;
+            height: 130px;
+            font-size: small;
+        }
+        #left>div {
+            width: 60%;
+            margin: auto;
+        }
+        #center {
+            width: 60%;
+            height: 150px;
+        }
+        #title {
+            width: 345px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+        }
+        #tabs {
+            padding-top: 50px;
+            width: 90%;
+            font-size: 14px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+        }
+        #right {
+            width: 20%;
+            height: 130px;
+        }
+        #right>div {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 1px;
+            font-size: 11px;
+            font-weight: bold;
+            margin: auto;
+        }
+        .rightImage {
+            height: 20px;
+        }
+        .rightImage>img {
+            height: 100%;
+        }
+        /* Header End */
+
+        /* sign in */
+        .ACCOUNT{
+            display: flex;
+            height: 500px;
+            width: 99%;
+            border: 0px solid red;
+            
+        }
+        .newaccount{
+            height: 500px;
+            width: 40%;
+            border: 0px solid blue;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            font-size: small;
+            margin-left: 340px;
+           
+            
+            
+
+        }
+        .lin{
+            border: 1.2px solid black;
+            height: 487px;
+            width: 0px;
+            margin-left: 375px;
+            margin-top: -224px;
+            background-color: black;
+        }
+        
+        .newaccount2{
+            height: 500px;
+            width: 40%;
+            border: 0px solid green;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            font-size: small;
+            margin-right: 340px;
+            
+            
+        }
+        .B > button{
+            color: whitesmoke;
+            height: 35px;
+            width: 300px;
+            margin-top: 5px;
+            background-color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+           
+        }
+
+        .inputtype{
+            height: 30px;
+            width: 293px;
+            margin-top: 10px;
+            display: block;
+        }
+        .showp{
+            position: absolute;
+            margin-top: -26px;
+            margin-left: 183px;
+            color: #a49b9b;
+            cursor: pointer;
+            text-decoration: underline;
+           
+        }
+        .cursor {
+            cursor: pointer;
+        }
+        .Fpassword{
+           color: rgba(34,31,32,.65);
+           text-decoration: underline;
+        }
+        .fpdiv{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .selectmonth{
+            width: 130px;
+            height: 40px;
+        }
+        .selectday{
+            width: 108px;
+            height: 40px;
+        }
+        .atag{
+            color: rgb(138, 134, 134); 
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .Self{
+            font-size: 11px;
+            text-align: initial;
+            line-height: 18px;
+        }
+        .SSelf{
+            font-size: 11px;
+            text-align: initial;
+            line-height: 18px;
+        }
+        .lin2{
+            border: 1px solid black;
+            
+            height: 0px;
+            width: 381px;
+            margin-left: 302px;
+            margin-top: 36px;
+            background-color: black;
+        }
+        .lin3{
+            display: flex;
+            border: 1px solid black;
+            
+            height: 0px;
+            width: 400px;
+            margin-left: 454px;
+            margin-top: -33px;
+            margin-bottom: 500px;
+            background-color: black;
+        }
+       
+
+        }
+        
+        .Bdiv{
+            border: 0px solid gray;
+            margin-top: 50px;
+            height: 150px;
+            width: 99%;
+        }
+        .Fbutton > button{
+            margin-left: 550px; 
+            height: 42px; 
+            width: 20%; 
+            border-radius: 5px;
+            color: whitesmoke;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            background-color: rgb(24,119,242);
+            font-size: medium;
+            padding-bottom: 5px;
+            
+            cursor: pointer;
+        
+
+        }
+       
+        
+        
+        
+       
+        /* Footer Start */
+        #footer {
+            width: 100%;
+            height: 570px;
+            color: white;
+            margin-top: 30px;
+            background-color: black;
+        }
+        .blackOption {
+            background-color: black;
+            color: white;
+            padding: 15px 45px;
+            font-size: 14px;
+            border: 1px solid white;
+        }
+        .mediumFont {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #footerContents {
+            display: flex;
+            height: 350px;
+            border-bottom: 1px solid #B7B7B8;
+            padding-top: 40px;
+        }
+        #footerLeft {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #footerRight {
+            width: 50%;
+        }
+        .blackInput {
+            width: 100%;
+        }
+        .blackSubmit {
+            border: 1px solid white;
+            padding: 14px;
+            background-color: black;
+            color: white;
+            margin-top: 15px;
+        }
+        #input {
+            width: 275px;
+            margin: auto;
+        }
+        .blackInput::placeholder {
+            color: white;
+        }
+        .footerIcons {
+            margin-top: 10px;
+            font-size: 30px;
+            padding-right: 15px;
+        }
+        .gap {
+            margin-top: 50px;
+        }
+        #footerBottom {
+            font-size: 15px;
+            padding-top: 30px;
+            color: #B7B7B8;
+            width: 90%;
+            display: flex;
+            margin: auto;
+        }
+        #footerBottom>div {
+            width: 50%;
+        }
+        #bottomTabs {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #bottomTabs>div>div {
+            width: 200px;
+            padding-top: 15px;
+            margin: auto;
+        }
+        #bottomIcon {
+            padding-top: 30px;
+            width: 50px;
+        }
+        /* Footer End */
+
+      
+
+    </style>
+</head>
+
+
+
+
+<body>
+    <!-- Header Start -->
+    <div id="container1">
+        <div id="top">
+            <div id="left">
+                <div id="email">
+                    <a href="email_sign_up.html">EMAIL SIGN UP</a>
+                </div>
+                <div id="find">
+                    <img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Search-White.svg">
+                    <input id="search" type="text" placeholder="SEARCH">
+                </div>
+            </div>
+            <div id="center">
+                <div id="title">
+                    <img src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png">
+                </div>
+                <div id="tabs">
+                    <div><a>NEW</a></div>
+                    <div><a>BESTSELLERS</a></div>
+                    <div><a>FACE</a></div>
+                    <div><a>MAKEUP</a></div>
+                    <div><a>SKINCARE</a></div>
+                    <div><a>VIRTUAL SERVICES</a></div>
+                    <div><a>DISCOVER</a></div>
+                </div>
+            </div>
+            <div id="right">
+                <div>
+                    <div><a>JOIN BB<u>ACCESS</u></a></div>
+                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"></div>
+                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></div>
+                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></div>
+                </div>
+            </div>
+        </div>
+        <div id="discount">
+            <p>Get 15% off your first order plus free shipping everyday when you join BB Access</p>
+
+        </div>
+        <!-- Header End -->
+
+
+
+        <!-- sign in -->
+        
+        <div class="ACCOUNT">
+            <div class="newaccount">
+                <p>ALREADY HAVE AN ACCOUNT?</p>
+                <p style="font-size: larger;color: black;">CONTINUE</p>
+                <div class="inpt">
+                    <input type="text" class="inputtype" placeholder="*EMAIL ADDRESS"  />
+
+                </div>
+                <div class="Ninpt">
+                   
+                    <input type="text" class="inputtype" placeholder="*PASWORD" />
+                    
+
+                </div>
+                <div class="fpdiv">
+                    <a class="Fpassword" href="#" data-test-id="form_signin_forgot_pwd">Forgot your password?</a>
+                </div>
+                
+               
+               <div class="B">
+                   <button>COUNTNUE</button>
+                </div>
+                <div class="lin"></div>
+
+            </div>
+            
+            <div class="newaccount2">
+                <p>DON'T HAVE AN ACCOUNT?</p>
+                <p style="font-size: larger;color: black;">CONTINUE</p>
+                <div class="inpt">
+                    <input type="text" class="inputtype" placeholder="*EMAIL ADDRESS" />
+
+                </div>
+                <div class="Ninpt">
+                   
+                    <input type="password" class="inputtype" placeholder="*PASWORD" id="pwd" />
+                    <div ><a class="showp cursor" onclick="showPassword()" >show password?</a></div>
+                    
+
+                </div>
+                <div>
+                    <p>When is your birthday?</p>
+                </div>
+                <div>
+                   <select class="selectmonth">
+                       <option>Month</option>
+                       <option value="january">January</option>
+                   </select>
+                   <select class="selectday">
+                    <option>DAY</option>
+                    <option value="DAY">1</option>
+                    <option value="DAY">2</option>
+                    <option value="DAY">3</option>
+                </select>
+                </div>
+                 <div class="Self">
+                <p> <input type="checkbox" class="checkbox" name="SMSPROMO_SMS_PROMOTIONS" value="1" >
+                   <span style="color: black;">
+                    Yes, I want to join BB Access. By clicking ‘Join Now’ I agree to BB Access<a class="atag"> Terms & Conditions, </a>
+                    Bobbi Brown <a class="atag">Privacy Policy</a> and, if I am a California resident, the Notice of <a class="atag">Financial 
+                        Incentive</a>. I also agree to the Bobbi Brown <a class="atag">Terms and Conditions</a>
+                   </span>
+                </p>
+                
+                
+            </div>
+            <div class="SSelf">
+                <p> <input type="checkbox" class="checkbox" name="SMSPROMO_SMS_PROMOTIONS" value="1" >
+                   <span style="color: black;">
+                    By clicking "Sign Up", I agree to the Bobbi Brown <a class="atag">Terms and Conditions</a> and <a class="atag">Privacy Policy</a>.
+
+                   </span>
+                </p>
+                
+                
+            </div>
+            <div class="B">
+                <button class="cursor">SIGN UP</button>
+             </div>
+                   
+                </div>
+            </div>
+           
+        </div>
+        
+        <div class="lin2">
+            <h4 style="margin-left: 400px; margin-top: -10px;">OR</h4>
+            <div class="lin3"></div>
+        </div>
+        <div class="Bdiv">
+            <div style="margin-left: 300px;">
+                <p>By clicking “Continue with Facebook”, I agree to Bobbi Brown’s <a class="atag">Terms and Conditions</a> and <a class="atag">Privacy Policy</a>.</p>
+            </div>
+            <div style="margin-left: 300px;">
+                <p> <input type="checkbox" class="checkbox" name="SMSPROMO_SMS_PROMOTIONS" value="1" >
+                    <span style="color: black;">
+                        Yes! I would like to receive the Bobbi Brown Email Newsletter.
+ 
+                    </span>
+                 </p>
+            </div>
+
+        </div>
+        <div class="Fbutton">
+            <button><i class="fa-brands fa-facebook" style="font-size: 25px; padding-right: 7px;"></i>  Continue With Facebook</button>
+        </div>
+       
+
+
+       
+       
+
+   
+
+   
+ 
+
+    <!-- Footer Start -->
+    <div id="footer">
+        <div id="footerContents">
+            <div id="footerLeft">
+                <div>
+                    <p class="bold">NEED HELP?</p>
+                    <p class="mediumFont">Chat with an Artist</p>
+                    <p class="titleTop">Text An Artist</p>
+                    <p class="titleTop">Call Us (877)-310-9222</p>
+                    <p class="titleTop">Shipping & Returns</p>
+                    <p class="titleTop">FAQS</p>
+                    <p class="titleTop">Careers</p>
+                    <select class="blackOption">
+                        <option>CHOOSE LOCATION</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="bold">MY BOBBI BROWN</p>
+                    <p class="titleTop">BB Access</p>
+                    <p class="titleTop">My Account</p>
+                    <p class="titleTop">My Orders</p>
+                    <p class="titleTop">Store Locator</p>
+                </div>
+            </div>
+            <div id="footerRight">
+                <div id="input">
+                    <input type="text" class="blackInput blackSubmit" placeholder="ENTER YOUR EMAIL">
+                    <input type="number" class="blackInput blackSubmit" placeholder="ENTER YOUR MOBILE PHONE">
+                    <button class="blackSubmit">SUBMIT</button>
+                    <div>
+                        <p class="bold gap">FOLLOW US</p>
+                        <i class="fa-brands fa-facebook-f footerIcons"></i>
+                        <i class="fa-brands fa-twitter footerIcons"></i>
+                        <i class="fa-brands fa-youtube footerIcons"></i>
+                        <i class="fa-brands fa-instagram footerIcons"></i>
+                        <i class="fa-brands fa-pinterest footerIcons"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerBottom">
+            <div>
+                <p>© Bobbi Brown Professional Cosmetics, Inc. All worldwide rights reserved.</p>
+            </div>
+            <div id="bottomTabs">
+                <div>
+                    <div><a>Terms & Conditions</a></div>
+                    <div><a>California Do Not Sell My Personal Information</a></div>
+                    <div><a>Accessibility</a></div>
+                </div>
+                <div>
+                    <div><a>Interest Based Ads</a></div>
+                    <div><a>Privacy Policy</a></div>
+                </div>
+                <div id="bottomIcon"><img src="https://www.bobbibrowncosmetics.com/media/images/global/bobbi_access_icon.jpg"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+    
+</body>
+</html>
+
+
+
+
+<script>
+    // show password 
+
+    function showPassword(){
+        var pwd = document.getElementById('pwd');
+        if(pwd.getAttribute('type') == 'password'){
+            pwd.setAttribute('type','text')
+        }else{
+            pwd.setAttribute('type','password')
+        }
+    }
+    // Creation of Array of Objects
+    var productsArr = [
+        {
+            image : "https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_EPXL17_600x600_0.jpg",
+            shade : "EXTRA LIGHT BISQUE",
+            name : "SKIN CORRECTOR STICK",
+            description : "Discoloration neutralizer for undereyes and face",
+            rating : 3,
+            price : 32,
+        },
+        {
+            image : "https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_ERFJ01_600x600_0.jpg",
+            shade : "PORCELAIN",
+            name : "SKIN CORRECTOR STICK",
+            description : "Easy-to-use, long-lasting concealer stick",
+            rating : 1,
+            price : 32,
+        },
+        {
+            image : "https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_ERGC03_600x600_0.jpg",
+            shade : "SUN DIP",
+            name : "LUXE EYE SHADOW",
+            description : "Metallic Shimmer Eye Shadow",
+            rating : 96,
+            price : 38,
+        }
+    ]
+    
+    // Mapping Array of Objects to Container-2
+    productsArr.map(function(elem){
+        var mainDiv = document.createElement("div");
+
+        var image = document.createElement("img");
+        image.setAttribute("src", elem.image);
+
+        var shade = document.createElement("h5");
+        shade.innerText = elem.shade;
+
+        var name = document.createElement("h4");
+        name.innerText = elem.name;
+
+        var description = document.createElement("p");
+        description.innerText = elem.description;
+
+        var star1 = document.createElement("i");
+        star1.setAttribute("class","fa-solid fa-star");
+        var star2 = document.createElement("i");
+        star2.setAttribute("class","fa-solid fa-star");
+        var star3 = document.createElement("i");
+        star3.setAttribute("class","fa-solid fa-star");
+        var star4 = document.createElement("i");
+        star4.setAttribute("class","fa-solid fa-star");
+        var star5 = document.createElement("i");
+        star5.setAttribute("class","fa-solid fa-star");
+        star5.innerText = " ("+elem.rating+") ";
+
+        var starDiv = document.createElement("div");
+        starDiv.setAttribute("class","rating");
+        starDiv.append(star1,star2,star3,star4,star5);
+
+        var price = document.createElement("p");
+        price.innerText = "$"+elem.price+".00";
+
+        var button = document.createElement("button");
+        button.innerText = "ADD TO BAG";
+
+        mainDiv.append(image,shade,name,description,starDiv,price,button);
+        // document.querySelector("#products2").append(mainDiv);
+    });
+</script>

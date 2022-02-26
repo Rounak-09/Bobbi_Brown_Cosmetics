@@ -3,14 +3,15 @@ body{
     background: url('https://www.bobbibrowncosmetics.com/media/images/account/email-sms-signup-envelope.gif') no-repeat center 285px;
 }
 .text{
-    margin-top:300px;
+    margin-top: 107px;
+    margin-left: 367px;
+    margin-bottom: 337px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
  
     height: 100px;
     width: 50%;
-    margin: auto;
     
 }
 .Required{
