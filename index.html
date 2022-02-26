@@ -472,7 +472,7 @@
         <div id="top">
             <div id="left">
                 <div id="email">
-                    <a href="email_sign_up.html">EMAIL SIGN UP</a>
+                    <a href="signup.html">EMAIL SIGN UP</a>
                 </div>
                 <div id="find">
                     <img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Search-White.svg">
@@ -497,8 +497,8 @@
                 <div>
                     <div><a>JOIN BB<u>ACCESS</u></a></div>
                     <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"></div>
-                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></div>
-                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></div>
+                    <div class="rightImage" onclick="redirect()" style="cursor: pointer;"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></div>
+                    <div class="rightImage" ><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></div>
                 </div>
             </div>
         </div>
@@ -857,5 +857,9 @@
         var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
         cartArr.push(elem);
         localStorage.setItem("cartItems", JSON.stringify(cartArr));
+    }
+
+    function redirect(){
+        window.location.href = window.location.origin+'/newlogin.html'
     }
 </script>
