@@ -498,7 +498,7 @@
                     <div><a>JOIN BB<u>ACCESS</u></a></div>
                     <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"></div>
                     <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></div>
-                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></div>
+                    <div class="rightImage" onclick="redirect()"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></div>
                 </div>
             </div>
         </div>
@@ -857,5 +857,9 @@
         var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
         cartArr.push(elem);
         localStorage.setItem("cartItems", JSON.stringify(cartArr));
+    }
+
+    function redirect(){
+        window.location.href = window.location.href+'signup.html'
     }
 </script>
