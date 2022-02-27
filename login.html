@@ -54,124 +54,154 @@
 
 
 
-        <!-- sign in -->
-        
-        <div class="ACCOUNT">
-            <div class="newaccount">
-                <p class="normal">ALREADY HAVE AN ACCOUNT?</p>
-                <p class="normal" style="font-size: larger;color: black;">CONTINUE</p>
-                <div class="inpt">
-                    <input type="text" class="inputtype" placeholder="*EMAIL ADDRESS"  />
+    <!-- sign in -->
+    
+    <div class="ACCOUNT">
+        <div class="newaccount">
+            <p class="normal">ALREADY HAVE AN ACCOUNT?</p>
+            <p class="normal" style="font-size: larger;color: black;">CONTINUE</p>
+            <div class="inpt">
+                <input id="loginEmail" type="text" class="inputtype" placeholder="*Email Address"  />
 
-                </div>
-                <div class="Ninpt">
-                   
-                    <input type="text" class="inputtype" placeholder="*PASWORD" />
-                    
-
-                </div>
-                <div class="fpdiv">
-                    <a class="Fpassword" href="#" data-test-id="form_signin_forgot_pwd">Forgot your password?</a>
-                </div>
+            </div>
+            <div class="Ninpt">
                 
-               
-               <div class="B">
-                   <button>COUNTNUE</button>
-                </div>
-                <div class="lin"></div>
+                <input id="loginPassword" type="text" class="inputtype" placeholder="*Password" />
+                
 
+            </div>
+            <div class="fpdiv">
+                <a class="Fpassword" href="#" data-test-id="form_signin_forgot_pwd">Forgot your password?</a>
             </div>
             
-            <div class="newaccount2">
-                <p class="normal">DON'T HAVE AN ACCOUNT?</p>
-                <p class="normal" style="font-size: larger;color: black;">CREATE & JOIN BB<u>ACCESS</u></p>
-                <div class="inpt">
-                    <input type="text" class="inputtype" placeholder="*EMAIL ADDRESS" />
-
-                </div>
-                <div class="Ninpt">
-                   
-                    <input type="password" class="inputtype" placeholder="*PASWORD" id="pwd" />
-                    <div ><a class="showp cursor" onclick="showPassword()" >show password?</a></div>
-                    
-
-                </div>
-                <div>
-                    <p>When is your birthday?</p>
-                </div>
-                <div>
-                   <select class="selectmonth">
-                       <option>Month</option>
-                       <option value="january">January</option>
-                   </select>
-                   <select class="selectday">
-                    <option>DAY</option>
-                    <option value="DAY">1</option>
-                    <option value="DAY">2</option>
-                    <option value="DAY">3</option>
-                </select>
-                </div>
-                 <div class="Self">
-                <p> <input type="checkbox" class="checkbox" name="SMSPROMO_SMS_PROMOTIONS" value="1" >
-                   <span style="color: black;">
-                    Yes, I want to join BB Access. By clicking ‘Join Now’ I agree to BB Access<a class="atag"> Terms & Conditions, </a>
-                    Bobbi Brown <a class="atag">Privacy Policy</a> and, if I am a California resident, the Notice of <a class="atag">Financial 
-                        Incentive</a>. I also agree to the Bobbi Brown <a class="atag">Terms and Conditions</a>
-                   </span>
-                </p>
-                
-                
-            </div>
-            <div class="SSelf">
-                <p> <input type="checkbox" class="checkbox" name="SMSPROMO_SMS_PROMOTIONS" value="1" >
-                   <span style="color: black;">
-                    By clicking "Sign Up", I agree to the Bobbi Brown <a class="atag">Terms and Conditions</a> and <a class="atag">Privacy Policy</a>.
-
-                   </span>
-                </p>
-                
-                
-            </div>
+            
             <div class="B">
-                <button class="cursor">SIGN UP</button>
-             </div>
-                   
-                </div>
+                <button onclick="checkLogin()">COUNTNUE</button>
             </div>
-           
+            <div class="lin"></div>
+
         </div>
         
-        <div class="lin2">
-            <h4 style="margin-left: 400px; margin-top: -10px;">OR</h4>
-            <div class="lin3"></div>
-        </div>
-        <div class="Bdiv">
-            <div style="margin-left: 300px;">
-                <p>By clicking “Continue with Facebook”, I agree to Bobbi Brown’s <a class="atag">Terms and Conditions</a> and <a class="atag">Privacy Policy</a>.</p>
+        <div class="newaccount2">
+            <p class="normal">DON'T HAVE AN ACCOUNT?</p>
+            <p class="normal" style="font-size: larger;color: black;">CREATE & JOIN BB<u>ACCESS</u></p>
+            <div class="inpt">
+                <input id="email1" type="text" class="inputtype" placeholder="*Email Address" />
+
             </div>
-            <div style="margin-left: 300px;">
-                <p> <input type="checkbox" class="checkbox" name="SMSPROMO_SMS_PROMOTIONS" value="1" >
-                    <span style="color: black;">
-                        Yes! I would like to receive the Bobbi Brown Email Newsletter.
- 
-                    </span>
-                 </p>
+            <div class="Ninpt">
+                
+                <input id="password" type="password" class="inputtype" placeholder="*Password"/>
+                <div ><a class="showp cursor" onclick="showPassword()" >Show Password?</a></div>
+                
+
             </div>
-
+            <div>
+                <p>When is your birthday?</p>
+            </div>
+            <div>
+                <select id="month" class="selectmonth">
+                    <option>MONTH</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <select id="day" class="selectday">
+                <option>DAY</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            </div>
+                <div class="Self">
+            <p> <input type="checkbox" class="checkbox" name="SMSPROMO_SMS_PROMOTIONS" value="1" >
+                <span style="color: black;">
+                Yes, I want to join BB Access. By clicking ‘Join Now’ I agree to BB Access<a class="atag"> Terms & Conditions, </a>
+                Bobbi Brown <a class="atag">Privacy Policy</a> and, if I am a California resident, the Notice of <a class="atag">Financial 
+                    Incentive</a>. I also agree to the Bobbi Brown <a class="atag">Terms and Conditions</a>
+                </span>
+            </p>
+            
+            
         </div>
-        <div class="Fbutton">
-            <button><i class="fa-brands fa-facebook" style="font-size: 25px; padding-right: 7px;"></i>  Continue With Facebook</button>
+        <div class="SSelf">
+            <p> <input type="checkbox" class="checkbox" name="SMSPROMO_SMS_PROMOTIONS" value="1" >
+                <span style="color: black;">
+                By clicking "Sign Up", I agree to the Bobbi Brown <a class="atag">Terms and Conditions</a> and <a class="atag">Privacy Policy</a>.
+
+                </span>
+            </p>
+            
+            
         </div>
-       
+        <div class="B">
+            <button class="cursor" onclick="createLogin()">SIGN UP</button>
+            </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="lin2">
+        <h4 style="margin-left: 400px; margin-top: -10px;">OR</h4>
+        <div class="lin3"></div>
+    </div>
+    <div class="Bdiv">
+        <div style="margin-left: 300px;">
+            <p>By clicking “Continue with Facebook”, I agree to Bobbi Brown’s <a class="atag">Terms and Conditions</a> and <a class="atag">Privacy Policy</a>.</p>
+        </div>
+        <div style="margin-left: 300px;">
+            <p> <input type="checkbox" class="checkbox" name="SMSPROMO_SMS_PROMOTIONS" value="1" >
+                <span style="color: black;">
+                    Yes! I would like to receive the Bobbi Brown Email Newsletter.
 
+                </span>
+                </p>
+        </div>
 
-       
-       
-
-   
-
-   
- 
+    </div>
+    <div class="Fbutton">
+        <button><i class="fa-brands fa-facebook" style="font-size: 25px; padding-right: 7px;"></i>  Continue With Facebook</button>
+    </div>
+    
 
     <!-- Footer Start -->
     <div id="footer">
@@ -250,73 +280,42 @@
             pwd.setAttribute('type','password')
         }
     }
-    // Creation of Array of Objects
-    var productsArr = [
-        {
-            image : "https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_EPXL17_600x600_0.jpg",
-            shade : "EXTRA LIGHT BISQUE",
-            name : "SKIN CORRECTOR STICK",
-            description : "Discoloration neutralizer for undereyes and face",
-            rating : 3,
-            price : 32,
-        },
-        {
-            image : "https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_ERFJ01_600x600_0.jpg",
-            shade : "PORCELAIN",
-            name : "SKIN CORRECTOR STICK",
-            description : "Easy-to-use, long-lasting concealer stick",
-            rating : 1,
-            price : 32,
-        },
-        {
-            image : "https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_ERGC03_600x600_0.jpg",
-            shade : "SUN DIP",
-            name : "LUXE EYE SHADOW",
-            description : "Metallic Shimmer Eye Shadow",
-            rating : 96,
-            price : 38,
+
+    function createLogin(){
+        var loginDetails = JSON.parse(localStorage.getItem("loginDetails")) || [];
+
+        var loginObj = {
+            email : document.getElementById("email1").value,
+            password : document.getElementById("password").value,
+            month : document.getElementById("month").value,
+            day : document.getElementById("day").value,
         }
-    ]
+
+        loginDetails.push(loginObj);
+        localStorage.setItem("loginDetails",JSON.stringify(loginDetails));
+
+        document.getElementById("email1").value = "";
+        document.getElementById("password").value = "";
+        document.getElementById("month").value = "";
+        document.getElementById("day").value = "";
+
+        alert("Account created successfully.");
+    }
     
-    // Mapping Array of Objects to Container-2
-    productsArr.map(function(elem){
-        var mainDiv = document.createElement("div");
+    function checkLogin(){
+        var loginDetails = JSON.parse(localStorage.getItem("loginDetails")) || [];
 
-        var image = document.createElement("img");
-        image.setAttribute("src", elem.image);
+        var checkEmail = document.getElementById("loginEmail").value;
+        var checkPassword = document.getElementById("loginPassword").value;
 
-        var shade = document.createElement("h5");
-        shade.innerText = elem.shade;
-
-        var name = document.createElement("h4");
-        name.innerText = elem.name;
-
-        var description = document.createElement("p");
-        description.innerText = elem.description;
-
-        var star1 = document.createElement("i");
-        star1.setAttribute("class","fa-solid fa-star");
-        var star2 = document.createElement("i");
-        star2.setAttribute("class","fa-solid fa-star");
-        var star3 = document.createElement("i");
-        star3.setAttribute("class","fa-solid fa-star");
-        var star4 = document.createElement("i");
-        star4.setAttribute("class","fa-solid fa-star");
-        var star5 = document.createElement("i");
-        star5.setAttribute("class","fa-solid fa-star");
-        star5.innerText = " ("+elem.rating+") ";
-
-        var starDiv = document.createElement("div");
-        starDiv.setAttribute("class","rating");
-        starDiv.append(star1,star2,star3,star4,star5);
-
-        var price = document.createElement("p");
-        price.innerText = "$"+elem.price+".00";
-
-        var button = document.createElement("button");
-        button.innerText = "ADD TO BAG";
-
-        mainDiv.append(image,shade,name,description,starDiv,price,button);
-        // document.querySelector("#products2").append(mainDiv);
-    });
+        function checkCredentials(){
+            for(var i=0; i<loginDetails.length; i++){
+            if(checkEmail==loginDetails[i].email && checkPassword==loginDetails[i].password){
+                return alert("Login successful.");
+                }
+            }
+            return alert("Invalid login credentials.");
+        }
+        checkCredentials();
+    }
 </script>
