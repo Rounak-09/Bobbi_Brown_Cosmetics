@@ -3,7 +3,7 @@ var skinCare = [
     image :"https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_E1LM01_600x600_0.jpg",
     name:"VITAMIN ENRICHED FACE BASE",
     details:"Multitasking,moisturizing primer",
-    price:"64.00",
+    price:64,
     rating:28,
     },
     {
@@ -12,7 +12,7 @@ var skinCare = [
     name:"SKIN LONG-WEAR WEIGHTLESS FOUNDATION SPF15",
     details:"Medium-Coverage Matte Foundation",
 
-    price:"50.00",
+    price:50,
     rating:28,
     },
 
@@ -24,7 +24,7 @@ var skinCare = [
     name:"EXTRA LIP TINT",
     details:"Color-Enhancing Lip Balm",
 
-    price:"34.00",
+    price:34,
     rating:28,
    },
    {
@@ -33,7 +33,7 @@ var skinCare = [
     name:"SHERR FINISH PRESSED POWDER",
     details:"Oil-Absorbing Setting Powder",
 
-    price:"45.00",
+    price:45,
     rating:28,
 
    },
@@ -43,7 +43,7 @@ var skinCare = [
     name:"LONG-WEAR CREAM SHADOW STICK",
     details:"Long-Lasting Cream Eye Shadow",
 
-    price:"30.00",
+    price:30,
     rating:28,
    },
    {
@@ -52,7 +52,7 @@ var skinCare = [
     name:"HIGHLIGHTING POWDER",
     details:"Pearlescent Glow Highlighter",
 
-    price:"64.00",
+    price:64,
     rating:28,
    },
    {
@@ -61,7 +61,7 @@ var skinCare = [
     name:"LIGHT BISQUE",
     details:"Dark Circles Color Corrector",
 
-    price:"64.00",
+    price:64,
     rating:28,
    },
    {
@@ -70,7 +70,7 @@ var skinCare = [
     name:"VITAMIN ENRICHED FACE BASE",
     details:"Multitasking,moisturizing primer",
 
-    price:"64.00",
+    price:64,
     rating:28,
    },
    {
@@ -79,7 +79,7 @@ var skinCare = [
     name:"SOOTHING CLEANSING OIL",
     details:"Makeup Remover and Face Cleanser",
 
-    price:"64.00",
+    price:64,
     rating:28,
    },
    {
@@ -88,7 +88,7 @@ var skinCare = [
     name:"CRUSHED OIL-INFUSED GLOSS",
     details:"Non-Sticky, Hydrating Lip Gloss",
 
-    price:"64.00",
+    price:64,
     rating:28,
    },
    {
@@ -97,7 +97,7 @@ var skinCare = [
     name:"CRUSHED LIP COLOR",
     details:"Lipstick Meets Lip Balm",
 
-    price:"64.00",
+    price:64,
     rating:28,
    },
    {
@@ -106,7 +106,7 @@ var skinCare = [
     name:"SMOKEY EYE MASCARA",
     details:"Mascara for Volume and Length",
 
-    price:"32.00",
+    price:32,
     rating:28,
    },
    {
@@ -115,7 +115,7 @@ var skinCare = [
     name:"EXTRA CLEANSING BALM",
     details:"Purifying.condtioning cleanser",
 
-    price:"56.00",
+    price:56,
     rating:10,
    },
    {
@@ -124,7 +124,7 @@ var skinCare = [
     name:"SKIN FOUNDATION STICK",
     details:"Moisturizing Stick Foundation",
 
-    price:"64.00",
+    price:64,
     rating:28,
    },
    {
@@ -133,7 +133,7 @@ var skinCare = [
     name:"SKIN CLARIFIER NO.75",
     details:"Pore-Minimizing Face Serum",
 
-    price:"64.00",
+    price:64,
     rating:28,
    },
    {
@@ -142,7 +142,7 @@ var skinCare = [
     name:"HYDRATING EYE CREAM",
     details:"Gentle, quick-absorbing cream",
 
-    price:"56.00",
+    price:56,
     rating:28,
    },
    {
@@ -151,7 +151,7 @@ var skinCare = [
     name:"PERFECTLY DEFINED LONG-WEAR BROW PENCIL",
     details:"Precision eyebrow pencil",
 
-    price:"45.00",
+    price:45,
     rating:28,
    },
    {
@@ -160,7 +160,7 @@ var skinCare = [
     name:"LONG-WEAR GEL EYELINER",
     details:"Smudgeproof, Waterproof Eyeliner",
 
-    price:"64.00",
+    price:64,
     rating:839,
    },
    {
@@ -169,7 +169,7 @@ var skinCare = [
     name:"EXTRA FACE OIL",
     details:"Conditioning-blend face oil",
 
-    price:"72.00",
+    price:72,
     rating:217,
    },
    {
@@ -178,7 +178,7 @@ var skinCare = [
     name:"BEACH",
     details:"Light, summer-inspired perfume",
 
-    price:"64.00",
+    price:64,
     rating:298,
    },
    {
@@ -187,7 +187,7 @@ var skinCare = [
     name:"MINI HIGHLIGHTING POWDER",
     details:"Pearlescent Glow on the Go",
 
-    price:"25.00",
+    price:25,
     rating:972,
    },
 
@@ -197,7 +197,7 @@ var skinCare = [
     name:"SOOTHING CLEANSING OIL",
     details:"Makeup Remover and Face Cleanser",
 
-    price:"50.00",
+    price:50,
     rating:452,
   },
   {
@@ -206,7 +206,7 @@ var skinCare = [
     name:"EXTRA REPAIR SERUM",
     details:"Firming ana moisturizing formula",
 
-    price:"119.00",
+    price:11,
     rating:130,
   },
   {
@@ -215,7 +215,7 @@ var skinCare = [
     name:"MINI VITAMIN ENRICHED FACE BASE",
     details:"Oil-free moisturizer and primer",
 
-    price:"69.00",
+    price:69,
     rating:456,
   },
   {
@@ -224,7 +224,7 @@ var skinCare = [
     name:"HYDRATING FACE CREAM",
     details:"Lightweight Face Moisturizerr",
 
-    price:"64.00",
+    price:64,
     rating:28,
   },
 ];
