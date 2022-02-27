@@ -192,6 +192,9 @@
             padding-top: 30px;
             width: 50px;
         }
+        #bottomTabs>div>div>a {
+            color: #B7B7B8;
+        }
         /* Footer End */
     </style>
 </head>
@@ -205,7 +208,7 @@
         <div id="top">
             <div id="left">
                 <div id="email">
-                    <a href="email_sign_up.html">EMAIL SIGN UP</a>
+                    <a href="signup.html">EMAIL SIGN UP</a>
                 </div>
                 <div id="find">
                     <img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Search-White.svg">
@@ -217,10 +220,10 @@
                     <img src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png">
                 </div>
                 <div id="tabs">
-                    <div><a>NEW</a></div>
+                    <div><a href="/new.html">NEW</a></div>
                     <div><a>BESTSELLERS</a></div>
-                    <div><a>FACE</a></div>
-                    <div><a>MAKEUP</a></div>
+                    <div><a href="/face.html">FACE</a></div>
+                    <div><a href="/makeup.html">MAKEUP</a></div>
                     <div><a>SKINCARE</a></div>
                     <div><a>VIRTUAL SERVICES</a></div>
                     <div><a>DISCOVER</a></div>
@@ -230,8 +233,8 @@
                 <div>
                     <div><a>JOIN BB<u>ACCESS</u></a></div>
                     <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"></div>
-                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></div>
-                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></div>
+                    <div class="rightImage" onclick="redirect()" style="cursor: pointer;"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></div>
+                    <div class="rightImage" ><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></div>
                 </div>
             </div>
         </div>
