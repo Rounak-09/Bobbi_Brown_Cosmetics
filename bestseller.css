@@ -1,0 +1,342 @@
+/* for head css part */
+/* Header */
+body {
+  font-family: "BBText Regular",Helvetica,Arial,sans-serif;
+  margin: 0px;
+}
+#container1 {
+  color: white;
+}
+#top {
+  width: 100%;
+  height: 120px;
+  padding-top: 30px;
+  display: flex;
+  background-color: black;
+}
+#email {
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: bold;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+#search {
+  font-size: 15px;
+  font-weight: bold;
+  width: 150px;
+  margin-bottom: 5px;
+  background-color: black;
+  border: 0px solid black;
+}
+#find {
+  padding-top: 65px;
+  height: 20px;
+  display: flex;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+}
+#find>img {
+  height: 100%;
+}
+#discount {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 1px;
+  background-color: rgb(58, 58, 58);
+}
+#left {
+  width: 20%;
+  height: 130px;
+  font-size: small;
+}
+#left>div {
+  width: 60%;
+  margin: auto;
+}
+#center {
+  width: 60%;
+  height: 150px;
+}
+#title {
+  width: 345px;
+  margin: auto;
+}
+img {
+  width: 100%;
+}
+#tabs {
+  padding-top: 50px;
+  width: 90%;
+  font-size: 14px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+#right {
+  width: 20%;
+  height: 130px;
+}
+#right>div {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: bold;
+  margin: auto;
+}
+.rightImage {
+  height: 20px;
+}
+.rightImage>img {
+  height: 100%;
+}
+/* Header End */
+
+/* for the bodyof bestseller part  stratcss */
+
+.head {
+    width: 100%;
+    height: 340px;
+    margin-top: -45px;
+    background-image: url("https://www.bobbibrowncosmetics.com/media/export/cms/guides/BeautyGuides/BB-Guides-LandingPage-Tile-Brow_@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .head > p {
+    text-align: center;
+    color: white;
+    padding-top: 130px;
+    font-size: 45px;
+    letter-spacing: 2px;
+  }
+  .head2 {
+    width: 97%;
+    height: 120px;
+    margin: auto;
+  }
+  .up {
+    width: 100%;
+    height: 37px;
+    display: flex;
+    margin-top: 10px;
+    font-size: 12px;
+    justify-content: space-between;
+  }
+  .up > a[href="homepage.html"] {
+    text-decoration: none;
+    color: black;
+  }
+  .up > select {
+    border: 1.5px solid black;
+    border-radius: 0px;
+    padding-left: 10px;
+  }
+
+  #sorting{
+    width: 340px;
+  }
+  #body {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 520px);
+    gap: 30px;
+    box-sizing: border-box;
+  }
+  #body > div {
+    text-align: center;
+    box-sizing: border-box;
+  }
+  #body div > a:nth-child(1) {
+    border: 0px;
+  }
+  #body div > a:nth-child(1) > img {
+    width: 100%;
+    height: 50%;
+  }
+  #body div > h4:nth-child(2) {
+    margin-top: 2px;
+    letter-spacing: -0.5px;
+  }
+  #body div > p:nth-child(3) {
+    margin-top: -20px;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+  }
+  #body div > p:nth-child(4) .material-icons-outlined {
+    font-size: 16px;
+    letter-spacing: -1px;
+  }
+  #body div > p:nth-child(5) {
+    margin-top: -10px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  #body div > button:nth-child(6) {
+    width: 150px;
+    height: 30px;
+    font-weight: 550;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 0.3px;
+    border: none;
+    background-color: black;
+  }
+  
+  .corrector {
+    background-image: url("https://www.bobbibrowncosmetics.com/media/export/cms/guides/Discover/FH20-Discover-Community.jpg");
+    background-size: cover;
+    color: white;
+  }
+  #body .corrector > p {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 550;
+    letter-spacing: 0.5px;
+  }
+  #body .corrector > h3 {
+    font-size: 28px;
+    margin-top: -14px;
+    letter-spacing: 1.3px;
+  }
+  #body .corrector > button {
+    margin-top: 30px;
+    color: black;
+    background-color: white;
+    border: none;
+    height: 33px;
+    width: 100px;
+    font-size: 12px;
+    font-weight: 550;
+  }
+  #body .corrector > button:hover {
+    background-color: black;
+    color: white;
+  }
+  .endPart {
+    width: 60%;
+    height: 100px;
+    padding-top: 5px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    color: #808090;
+    
+  }
+     
+
+  /* bestseller end */
+ .imag2{
+     display: flex;
+     background-color: black;
+     color: white;
+     
+ }
+ .imag2>div{
+   margin: auto;
+   text-align: center;
+   
+   
+ }
+ .imag2>div>a{
+   text-decoration: underline;
+   margin-right: 100px;
+ }
+ .imag2>div>p{
+   font-size: 20px;
+ }
+ .imag2>div>h2{
+   font-size: 50px;
+ }
+
+  /* fotter */
+  #footer {
+    width: 100%;
+    height: 570px;
+    color: white;
+    margin-top: 30px;
+    background-color: black;
+}
+.blackOption {
+    background-color: black;
+    color: white;
+    padding: 15px 45px;
+    font-size: 14px;
+    border: 1px solid white;
+}
+.mediumFont {
+    font-size: 14px;
+    font-weight: bold;
+}
+#footerContents {
+    display: flex;
+    height: 350px;
+    border-bottom: 1px solid #B7B7B8;
+    padding-top: 40px;
+}
+#footerLeft {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#footerRight {
+    width: 50%;
+}
+.blackInput {
+    width: 100%;
+}
+.blackSubmit {
+    border: 1px solid white;
+    padding: 14px;
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+}
+#input {
+    width: 275px;
+    margin: auto;
+}
+.blackInput::placeholder {
+    color: white;
+}
+.footerIcons {
+    margin-top: 10px;
+    font-size: 30px;
+    padding-right: 15px;
+}
+.gap {
+    margin-top: 50px;
+}
+#footerBottom {
+    font-size: 15px;
+    padding-top: 30px;
+    color: #B7B7B8;
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+#footerBottom>div {
+    width: 50%;
+}
+#bottomTabs {
+    display: flex;
+    justify-content: space-evenly;
+}
+#bottomTabs>div>div {
+    width: 200px;
+    padding-top: 15px;
+    margin: auto;
+}
+#bottomIcon {
+    padding-top: 30px;
+    width: 50px;
+}
+
+/* fotter end */
