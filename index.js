@@ -78,7 +78,3 @@ function addToCart(elem)
     cartArr.push(elem);
     localStorage.setItem("cartItems", JSON.stringify(cartArr));
 }
-
-function openLogin(){
-    window.location.href = window.location.origin+'/newlogin.html'
-}
