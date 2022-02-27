@@ -39,6 +39,10 @@ button:hover {
   font-size: 9px;
   font-weight: bold;
 }
+#email > a {
+  text-decoration: none;
+  color: white;
+}
 #find {
   padding-top: 40px;
 }
@@ -63,10 +67,19 @@ button:hover {
 #tabs {
   padding-top: 37px;
   width: 90%;
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
   margin: auto;
+  letter-spacing: 0.7px;
   justify-content: space-between;
+}
+#tabs > div > a {
+  text-decoration: none;
+  color: white;
+}
+#tabs > div > a:hover {
+  border-bottom: 1.5px solid white;
+  cursor: pointer;
 }
 #right {
   width: 20%;
@@ -79,6 +92,10 @@ button:hover {
   letter-spacing: 1px;
   font-size: 11px;
   font-weight: bold;
+}
+#right > div > a {
+  text-decoration: none;
+  color: white;
 }
 .icons {
   font-size: 15px;
@@ -99,19 +116,19 @@ button:hover {
   width: 100%;
   height: 280px;
   margin-top: -45px;
-  background-image: url(/Images/bgImage.jpg);
+  background-image: url(https://wi.wallpapertip.com/wsimgs/9-93816_wallpaper-backgrounds-south-african-land-scape-wallpaper-south.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .head > p {
   text-align: center;
   color: white;
-  padding-top: 130px;
+  padding-top: 80px;
   font-size: 45px;
   letter-spacing: 2px;
 }
 .head2 {
-  width: 97%;
+  width: 98%;
   height: 120px;
   margin: auto;
 }
@@ -120,11 +137,15 @@ button:hover {
   height: 37px;
   display: flex;
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 12.5px;
   justify-content: space-between;
 }
 .up > a[href="./index.html"] {
   text-decoration: none;
+  color: black;
+}
+.up > a[href="./index.html"]:hover {
+  border: 1px solid black;
   color: black;
 }
 .up > select {
@@ -134,10 +155,10 @@ button:hover {
 }
 #body {
   display: grid;
-  width: 97%;
+  width: 98%;
   margin: auto;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 520px);
+  grid-template-rows: repeat(10, 610px);
   gap: 30px;
   box-sizing: border-box;
 }
@@ -149,7 +170,7 @@ button:hover {
   border: 0px;
 }
 #body div > a:nth-child(1) > img {
-  width: 100%;
+  width: 90%;
   height: 50%;
 }
 #body div > h4:nth-child(2) {
@@ -181,24 +202,31 @@ button:hover {
   background-color: black;
 }
 
-.corrector {
-  background-image: url(/Images/three.jpg);
+.corrector1 {
+  background-image: url(https://www.bobbibrown.co.uk/media/export/cms/HP_Modules/FH22/FY22_ISF_Reform_Module_Product_Formula_Global_PC_SLICE_BRIGHTERLOOK.jpg);
   background-size: cover;
   color: white;
+  font-family: "Roboto Condensed", sans-serif;
 }
-#body .corrector > p {
-  font-style: italic;
-  font-size: 14px;
-  font-weight: 550;
-  letter-spacing: 0.5px;
+.corrector1 > h3:nth-child(1) {
+  font-size: 37px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  font-weight: 400;
 }
-#body .corrector > h3 {
-  font-size: 28px;
-  margin-top: -14px;
-  letter-spacing: 1.3px;
+.corrector1 > h3:nth-child(2) {
+  font-size: 37px;
+  letter-spacing: 2px;
+  margin-top: -35px;
+  font-weight: 400;
 }
-#body .corrector > button {
-  margin-top: 30px;
+.corrector1 > p:nth-child(3) {
+  font-weight: 100;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+.corrector1 > button:nth-child(4) {
+  margin-top: 40px;
   color: black;
   background-color: white;
   border: none;
@@ -207,9 +235,80 @@ button:hover {
   font-size: 12px;
   font-weight: 550;
 }
-#body .corrector > button:hover {
-  background-color: black;
+.corrector2 {
+  background-image: url(https://media.istockphoto.com/photos/paint-on-canvas-coloured-sections-with-bright-shades-picture-id1282500710?k=20&m=1282500710&s=612x612&w=0&h=MGzUL-AeP3cE3o7tDnC1aXt6WZA0-xRgV87aOx92rV8=);
+  background-size: cover;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.corrector2 > h3 {
+  margin-top: 160px;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.corrector2 > p {
+  font-size: 16px;
+  margin-top: -20px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+.corrector2 > img {
+  width: 150px;
+}
+.corrector3 {
+  background-image: url(https://media.istockphoto.com/photos/paint-on-canvas-coloured-sections-with-bright-shades-picture-id1282500710?k=20&m=1282500710&s=612x612&w=0&h=MGzUL-AeP3cE3o7tDnC1aXt6WZA0-xRgV87aOx92rV8=);
+  background-size: cover;
   color: white;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.corrector3 > h3 {
+  font-size: 35px;
+  margin-top: 150px;
+  font-weight: 400;
+  letter-spacing: 2.3px;
+}
+.corrector3 > p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-top: -27px;
+}
+.corrector3 > button {
+  background-color: white;
+  margin-top: 50px;
+  color: black;
+  border: none;
+  width: 130px;
+  font-size: 11px;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+  height: 35px;
+}
+.corrector4 {
+  background-image: url(https://assets.vogue.in/photos/5e3aa28e208dd60008089628/2:3/w_2560%2Cc_limit/001-Emma-Stone-Wedding-SEO-VogueGlobe-Jan30-Getty-Images.jpg);
+  background-size: cover;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.corrector4 > h3 {
+  font-size: 35px;
+  margin-top: 210px;
+  font-weight: 400;
+  letter-spacing: 2.3px;
+}
+.corrector4 > p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-top: -27px;
+}
+.corrector4 > button {
+  background-color: white;
+  margin-top: 50px;
+  color: black;
+  border: none;
+  width: 130px;
+  font-size: 11px;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+  height: 35px;
 }
 .endPart {
   width: 100%;
@@ -220,32 +319,6 @@ button:hover {
   font-size: 15px;
   background-color: rgb(250, 248, 248);
 }
-
-/* #body .inner div.wrapper {
-  position: relative;
-  transform: translate(-50%, -50%);
-}
-#body .inner div.wrapper .img_area {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  margin: 1% auto 0;
-}
-#body .inner div.wrapper .img_area img {
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 90%;
-  transform: opacity 1s ease-in-out;
-}
-#body .inner div.wrapper .img_area img.back:hover {
-  opacity: 0;
-  cursor: pointer;
-} */
-/* Body End */
-/* Footer */
 #footer {
   width: 100%;
   height: 570px;
@@ -328,3 +401,28 @@ button:hover {
   width: 50px;
 }
 /* Footer End */
+
+/* Media Queries */
+
+@media all and (max-width: 700px) {
+  #body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .corrector3 > h3 {
+    margin-top: 30px;
+  }
+  .corrector3 > button {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .corrector4 > h3 {
+    margin-top: 250px;
+    margin-bottom: 30px;
+  }
+  .corrector4 > button {
+    margin-bottom: 400px;
+  }
+  .endPart {
+    height: 200px;
+  }
+}
