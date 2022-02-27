@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/32f181d7c4.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        /* Header */
+        body {
+            font-family: "BBText Regular",Helvetica,Arial,sans-serif;
+            margin: 0px;
+        }
+        #container1 {
+            color: white;
+        }
+        #top {
+            width: 100%;
+            height: 120px;
+            padding-top: 30px;
+            display: flex;
+            background-color: black;
+        }
+        #email {
+            letter-spacing: 2px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        #email>a {
+            color: white;
+            text-decoration: none;
+        }
+        #search {
+            font-size: 15px;
+            font-weight: bold;
+            width: 150px;
+            margin-bottom: 5px;
+            background-color: black;
+            border: 0px solid black;
+        }
+        #find {
+            padding-top: 65px;
+            height: 20px;
+            display: flex;
+            padding-bottom: 5px;
+            border-bottom: 1px solid white;
+        }
+        #find>img {
+            height: 100%;
+        }
+        #left {
+            width: 20%;
+            height: 130px;
+            font-size: small;
+        }
+        #left>div {
+            width: 60%;
+            margin: auto;
+        }
+        #center {
+            width: 60%;
+            height: 150px;
+        }
+        #title {
+            width: 345px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+        }
+        #tabs {
+            padding-top: 50px;
+            width: 90%;
+            font-size: 14px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+        }
+        #right {
+            width: 20%;
+            height: 130px;
+        }
+        #right>div {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 1px;
+            font-size: 11px;
+            font-weight: bold;
+            margin: auto;
+        }
+        .rightImage {
+            height: 20px;
+        }
+        .rightImage>img {
+            height: 100%;
+        }
+        /* Header End */
+
+        #box {
+            color: black;
+            font-family: "BBText Regular",Helvetica,Arial,sans-serif;
+            font-size: 14px;
+            width: 68%;
+            padding-top: 40px;
+            margin: auto;
+            display: flex;
+            border-bottom: 1px solid lightgrey;
+        }
+        #leftBox {
+            width: 60%;
+            height: 100%;
+        }
+        #rightBox {
+            width: 40%;
+            height: 100%;
+            margin-left: 30px;
+        }
+        .boxTitle {
+            padding-left: 20px;
+        }
+        .boxHead {
+            font-size: 25px;
+        }
+        .backgroundGrey {
+            font-size: 14px;
+            background-color: #eff0f0;
+            padding-left: 20px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            border-top: 2px solid black;
+        }
+        .blackButton {
+            background-color: black;
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+            padding: 7px 10px;
+            border: 1px solid black;
+        }
+        .cartOptions {
+            margin-top: 50px;
+            display: flex;
+            padding-bottom: 40px;
+            justify-content: space-between;
+        }
+        #table {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #tableHead {
+            text-align: center;
+            font-size: 17px;
+        }
+        tr>td:first-child {
+            width: 50px;
+        }
+        tr>td {
+            text-align: center;
+        }
+        tr>td:last-child {
+            text-align: right;
+        }
+        tr>td>select {
+            width: 70px;
+            height: 40px;
+            padding: 5px;
+        }
+        #tableBody>tr {
+            border-top: 1px solid lightgrey;
+        }
+        .quantityButton {
+            margin-left: 10px;
+            background-color: white;
+            color: black;
+            font-size: medium;
+        }
+        .checkout {
+            display: flex;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 30px;
+            border-top: 1px solid lightgrey;
+        }
+        .checkout2 {
+            display: flex;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: 1px solid lightgrey;
+        }
+        .checkout3>img {
+            width: 80px;
+            height: 17px;
+        }
+        .leftCheck {
+            width: 60%;
+            text-align: right;
+        }
+        .leftCheck>select {
+            font-size: 14px;
+            padding: 3px;
+        }
+        .rightCheck {
+            width: 40%;
+            text-align: right;
+        }
+        .checkout3 {
+            border-top: 1px solid lightgrey;
+        }
+        #rightAlign {
+            text-align: right;
+        }
+        #rightBox1 {
+            background-color: #eff0f0;
+            padding: 5px 20px;
+        }
+        #rightBox1>img {
+            width: 20%;
+        }
+        .boxInput {
+            padding-top: 30px;
+            border-top: 1px solid black;
+        }
+        #rightBox1>div>input {
+            padding: 10px;
+            width: 93%;
+        }
+        #offerBox {
+            display: flex;
+            justify-content: space-between;
+        }
+        .whiteButton {
+            color: #949494;
+            font-weight: bold;
+            background-color: white;
+            font-size: 11px;
+            padding-top: 10px;
+            border: 0px solid black;
+            border-bottom: 2px solid #949494;
+        }
+        #offerBox>button {
+            background-color: #eff0f0;
+        }
+        #getPoints {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .PriceTable {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .totalPrice {
+            font-weight: bold;
+            margin-top: 40px;
+        }
+        .shipping {
+            color: #949494;
+        }
+        #rightBox2>img {
+            width: 20%;
+        }
+        #rightBox2>select {
+            width: 100%;
+            padding: 10px;
+        }
+        #rightBox2>p>a {
+            color: #949494;
+            text-decoration: underline;
+        }
+        #rightBox2>button {
+            background-color: white;
+            border: 0px solid white;
+        }
+        #rightBox2>i {
+            color: black;
+            padding: 1px;
+        }
+        .rightLast {
+            margin-top: 20px;
+        }
+
+        /* Footer Start */
+        #footer {
+            width: 100%;
+            height: 200px;
+            color: white;
+            margin-top: 60px;
+            background-color: black;
+        }
+        #footerBottom {
+            font-size: 15px;
+            padding-top: 30px;
+            color: #B7B7B8;
+            width: 90%;
+            display: flex;
+            margin: auto;
+        }
+        #footerBottom>div {
+            width: 50%;
+        }
+        #bottomTabs {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #bottomTabs>div>div {
+            width: 200px;
+            padding-top: 15px;
+            margin: auto;
+        }
+        .colorGrey {
+            color: #b7b7b8;
+        }
+        #bottomIcon {
+            padding-top: 30px;
+            width: 50px;
+        }
+        /* Footer End */
+    </style>
+</head>
+<body>
+    <!-- Header Start -->
+    <div id="container1">
+        <div id="top">
+            <div id="left">
+                <div id="email">
+                    <a href="email_sign_up.html">EMAIL SIGN UP</a>
+                </div>
+                <div id="find">
+                    <img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Search-White.svg">
+                    <input id="search" type="text" placeholder="SEARCH">
+                </div>
+            </div>
+            <div id="center">
+                <div id="title">
+                    <img src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png">
+                </div>
+                <div id="tabs">
+                    <div><a>NEW</a></div>
+                    <div><a>BESTSELLERS</a></div>
+                    <div><a>FACE</a></div>
+                    <div><a>MAKEUP</a></div>
+                    <div><a>SKINCARE</a></div>
+                    <div><a>VIRTUAL SERVICES</a></div>
+                    <div><a>DISCOVER</a></div>
+                </div>
+            </div>
+            <div id="right">
+                <div>
+                    <div><a>JOIN BB<u>ACCESS</u></a></div>
+                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"></div>
+                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></div>
+                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Box Start -->
+    <div id="box">
+        <!-- Left Box Start -->
+        <div id="leftBox">
+            <img src="https://www.bobbibrowncosmetics.com/media/export/cms/offers/BB_Banner_Loyalty_728x90.jpg">
+            <div class="boxTitle">
+                <p class="boxHead">SHOPPING BAG</p>
+            </div>
+            <div class="backgroundGrey">
+                <p>Enjoy Free Standard Shipping on any $65+ order.</p>
+            </div> 
+
+            <!-- Creation of Cart -->
+            <div class="cartOptions">
+                <div>
+                    <button class="whiteButton">CONTINUE SHOPPING</button>
+                </div>
+                <div>
+                    <img src="https://www.bobbibrowncosmetics.com/media/images/checkout/paypal.png">
+                </div>
+                <div>OR</div>
+                <div>
+                    <button class="blackButton">CHECKOUT</button>
+                </div>
+            </div>
+            <!-- Additon of Cart Items -->
+            <table id="table">
+                <thead id="tableHead">
+                    <tr>
+                        <td>PRODUCT</td>
+                        <td></td>
+                        <td>QUANTITY</td>
+                        <td>PRICE</td>
+                        <td id="rightAlign">TOTAL</td>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+            <!-- Checkout -->
+            <div class="checkout">
+                <div class="leftCheck">
+                    <p>SUBTOTAL</p>
+                    <select>
+                        <option>Standard (3-5 business days)</option>
+                    </select>
+                </div>
+                <div class="rightCheck">
+                    <p id="grandTotal">0</p>
+                    <p class="shipping">FREE</p>
+                </div>
+            </div>
+            <div  class="checkout2">
+                <div class="leftCheck">ESTIMATED TOTAL</div>
+                <div class="rightCheck" id="Total">0</div>
+            </div>
+            <div class="checkout3">
+                <p>Pay $0 Now<br>First Payment 2 Weeks From Purchase<br>4 interest-free installments with</p>
+                <img src="https://www.bobbibrowncosmetics.com/media/images/checkout/afterpay-logo-black.png">
+            </div>
+            <div class="cartOptions">
+                <div>
+                    <button class="whiteButton">CONTINUE SHOPPING</button>
+                </div>
+                <div>
+                    <img src="https://www.bobbibrowncosmetics.com/media/images/checkout/paypal.png">
+                </div>
+                <div>OR</div>
+                <div>
+                    <button class="blackButton">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+        <!-- Left Box End -->
+
+        <!-- Right Box Start -->
+        <div id="rightBox">
+            <div id="rightBox1">
+                <p class="boxHead">OFFER CODE</p>
+                <div class="boxInput">
+                    <input type="text" placeholder="Offer Code">
+                </div>
+                
+                <div id="offerBox">
+                    <p>One offer code per order</p>
+                    <button class="whiteButton">SEE ALL OFFERS</buton>
+                </div>
+                <button class="blackButton">APPLY</button>
+                <div id="getPoints">
+                   <p>Join BB Access <br>and earn points with your purchase today.</p> 
+                </div>
+                <div id="Price">
+                    <div class="PriceTable">
+                        <div>SUB TOTAL</div>
+                        <div id="subTotal">0</div>
+                    </div>
+                    <div class="PriceTable">
+                        <div>SHIPPING METHOD</div>
+                        <div class="shipping">FREE</div>
+                    </div>
+                    <div class="PriceTable totalPrice">
+                        <div>ESTIMATED TOTAL</div>
+                        <div id="total">0</div>
+                    </div>
+                </div>
+                <div>
+                    <p>Pay $0 Now<br>First Payment 2 Weeks From Purchase<br>4 interest-free installments with</p>
+                </div>
+                <img src="https://www.bobbibrowncosmetics.com/media/images/checkout/afterpay-logo-black.png">
+                
+            </div>
+            <div id="rightBox2">
+                <p class="boxHead">DONATE</p>
+                <hr>
+                <img src="https://www.bobbibrowncosmetics.com/media/export/cms/products/80x80/bb_prod_555877_80x80_0.jpg">
+                <select>
+                    <option>BCRF DONATION</option>
+                    <option>SHE'S THE FIRST</option>
+                </select>
+                <p>Donate today to The Breast Cancer Research Foundation to support life-saving research. <a class="colorGrey" href="">Learn More</a> about BCRF.</p>
+                <i class="fa-solid fa-circle"></i></i></i><button>$1.00</button> <i class="fa-regular fa-circle"></i><button>$5.00</button><i class="fa-regular fa-circle"> </i><button>$10.00</button>
+                <div class="rightLast"><button class="blackButton">ADD TO BAG</button></div>
+            </div>
+        </div>
+        <!-- Right Box End -->
+    </div>
+    
+    <!-- Footer Start -->
+    <div id="footer">
+        <div id="footerBottom">
+            <div>
+                <p>© Bobbi Brown Professional Cosmetics, Inc. All worldwide rights reserved.</p>
+            </div>
+            <div id="bottomTabs">
+                <div>
+                    <div><a>Terms & Conditions</a></div>
+                    <div><a>California Do Not Sell My Personal Information</a></div>
+                    <div><a>Accessibility</a></div>
+                </div>
+                <div>
+                    <div><a>Interest Based Ads</a></div>
+                    <div><a>Privacy Policy</a></div>
+                </div>
+                <div id="bottomIcon"><img src="https://www.bobbibrowncosmetics.com/media/images/global/bobbi_access_icon.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+</body>
+</html>
+
+<script>
+    var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+    function displayCartItems(){
+
+        document.getElementById("tableBody").innerHTML = "";
+
+        cartArr.map(function(elem, index){
+            var row = document.createElement("tr");
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image);
+
+            var photo = document.createElement("td");
+            photo.append(image);
+
+            var name = document.createElement("td");
+            name.innerText = elem.name;
+
+            var quantity = document.createElement("td");
+
+            deductButton = document.createElement("button");
+            deductButton.innerText = "-";
+            deductButton.setAttribute("class","quantityButton");
+            deductButton.addEventListener("click", function(){
+                decreaseQuantity(index);
+            })
+
+            quantity.textContent = elem.quantity;
+
+            var addButton = document.createElement("button");
+            addButton.innerText = "+";
+            addButton.setAttribute("class","quantityButton");
+            addButton.addEventListener("click", function(){
+                increaseQuantity(index)
+            });
+            quantity.append(deductButton, addButton);
+
+            var price = document.createElement("td");
+            price.innerText = "$"+elem.price+".00";
+
+            var total = document.createElement("td");
+            total.innerText = "$"+(elem.price*elem.quantity)+".00";
+
+            row.append(photo,name,quantity,price,total);
+            document.getElementById("tableBody").append(row);
+        });
+    }
+    
+    displayCartItems(cartArr);
+    updateTotal();
+
+    function updateTotal(){
+        var subTotal = cartArr.reduce(function (acc,elem){
+            return acc + (elem.price*elem.quantity);
+        },0);
+        document.getElementById("subTotal").textContent = "$"+subTotal+".00";
+        document.getElementById("total").textContent = "$"+subTotal+".00";
+        document.getElementById("grandTotal").textContent = "$"+subTotal+".00";
+        document.getElementById("Total").textContent = "$"+subTotal+".00";
+    }
+
+    function decreaseQuantity(index){
+        cartArr[index].quantity--;
+        localStorage.setItem("cartItems",JSON.stringify(cartArr));
+
+        displayCartItems();
+        updateTotal();
+    }
+    
+    function increaseQuantity(index){
+        cartArr[index].quantity++;
+        localStorage.setItem("cartItems",JSON.stringify(cartArr));
+
+        displayCartItems();
+        updateTotal();
+    }
+</script>
