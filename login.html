@@ -8,328 +8,7 @@
     <script src="https://kit.fontawesome.com/32f181d7c4.js" crossorigin="anonymous"></script>
     <title>Cosmetics | Bobbi Brown Cosmetics</title>
     <style>
-        /* Header */
-        body {
-            font-family: "BBText Regular",Helvetica,Arial,sans-serif;
-            margin: 0px;
-        }
-        #container1 {
-            color: white;
-        }
-        #top {
-            width: 100%;
-            height: 120px;
-            padding-top: 30px;
-            display: flex;
-            background-color: black;
-        }
-        #email {
-            letter-spacing: 2px;
-            font-size: 11px;
-            font-weight: bold;
-        }
-        a {
-            color: white;
-            text-decoration: none;
-        }
-        #search {
-            font-size: 15px;
-            font-weight: bold;
-            width: 150px;
-            margin-bottom: 5px;
-            background-color: black;
-            border: 0px solid black;
-        }
-        #find {
-            padding-top: 65px;
-            height: 20px;
-            display: flex;
-            padding-bottom: 5px;
-            border-bottom: 1px solid white;
-        }
-        #find>img {
-            height: 100%;
-        }
-        #discount {
-            width: 100%;
-            height: 50px;
-            text-align: center;
-            font-size: 15px;
-            padding-top: 1px;
-            background-color: rgb(58, 58, 58);
-        }
-        #left {
-            width: 20%;
-            height: 130px;
-            font-size: small;
-        }
-        #left>div {
-            width: 60%;
-            margin: auto;
-        }
-        #center {
-            width: 60%;
-            height: 150px;
-        }
-        #title {
-            width: 345px;
-            margin: auto;
-        }
-        img {
-            width: 100%;
-        }
-        #tabs {
-            padding-top: 50px;
-            width: 90%;
-            font-size: 14px;
-            display: flex;
-            margin: auto;
-            justify-content: space-between;
-        }
-        #right {
-            width: 20%;
-            height: 130px;
-        }
-        #right>div {
-            width: 70%;
-            display: flex;
-            justify-content: space-between;
-            letter-spacing: 1px;
-            font-size: 11px;
-            font-weight: bold;
-            margin: auto;
-        }
-        .rightImage {
-            height: 20px;
-        }
-        .rightImage>img {
-            height: 100%;
-        }
-        /* Header End */
-
-        /* sign in */
-        .ACCOUNT{
-            display: flex;
-            height: 500px;
-            width: 99%;
-            padding-top: 30px;
-            border: 1px solid red;
-            
-        }
-        .newaccount{
-            height: 500px;
-            width: 40%;
-            border: 1px solid blue;
-            color: black;
-            font-size: small;
-            margin-left: 340px;
-        }
-        .normal {
-            font-weight: bolder;
-        }
-        .lin{
-            border: 1.2px solid black;
-            height: 487px;
-            width: 0px;
-            margin-left: 375px;
-            margin-top: -224px;
-            background-color: black;
-        }
         
-        .newaccount2{
-            height: 500px;
-            width: 40%;
-            border: 1px solid green;
-            color: black;
-            font-size: small;
-            margin-right: 340px;
-        }
-        .B > button{
-            color: whitesmoke;
-            height: 35px;
-            width: 300px;
-            margin-top: 5px;
-            background-color: black;
-            font-weight: bolder;
-           
-        }
-
-        .inputtype{
-            height: 30px;
-            width: 293px;
-            margin-top: 10px;
-            display: block;
-        }
-        .showp{
-            position: absolute;
-            margin-top: -26px;
-            margin-left: 183px;
-            color: #a49b9b;
-            cursor: pointer;
-            text-decoration: underline;
-           
-        }
-        .cursor {
-            cursor: pointer;
-        }
-        .Fpassword{
-           color: rgba(34,31,32,.65);
-           text-decoration: underline;
-        }
-        .fpdiv{
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .selectmonth{
-            width: 130px;
-            height: 40px;
-        }
-        .selectday{
-            width: 108px;
-            height: 40px;
-        }
-        .atag{
-            color: rgb(138, 134, 134); 
-            text-decoration: underline;
-            cursor: pointer;
-        }
-        .Self{
-            font-size: 11px;
-            text-align: initial;
-            line-height: 18px;
-        }
-        .SSelf{
-            font-size: 11px;
-            text-align: initial;
-            line-height: 18px;
-        }
-        .lin2{
-            border: 1px solid black;
-            height: 0px;
-            width: 381px;
-            margin-left: 302px;
-            margin-top: 36px;
-            background-color: black;
-        }
-        .lin3{
-            display: flex;
-            border: 1px solid black;
-            height: 0px;
-            width: 400px;
-            margin-left: 454px;
-            margin-top: -33px;
-            margin-bottom: 500px;
-            background-color: black;
-        }
-        
-        .Bdiv{
-            margin-top: 50px;
-            height: 150px;
-            width: 99%;
-        }
-        .Fbutton > button{
-            margin-left: 550px; 
-            height: 42px; 
-            width: 20%; 
-            border-radius: 5px;
-            color: whitesmoke;
-            font-weight: bolder;
-            background-color: rgb(24,119,242);
-            font-size: medium;
-            padding-bottom: 5px;
-            cursor: pointer;
-        
-
-        }
-       
-        
-        
-        
-       
-        /* Footer Start */
-        #footer {
-            width: 100%;
-            height: 570px;
-            color: white;
-            margin-top: 30px;
-            background-color: black;
-        }
-        .blackOption {
-            background-color: black;
-            color: white;
-            padding: 15px 45px;
-            font-size: 14px;
-            border: 1px solid white;
-        }
-        .mediumFont {
-            font-size: 14px;
-            font-weight: bold;
-        }
-        #footerContents {
-            display: flex;
-            height: 350px;
-            border-bottom: 1px solid #B7B7B8;
-            padding-top: 40px;
-        }
-        #footerLeft {
-            width: 50%;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        #footerRight {
-            width: 50%;
-        }
-        .blackInput {
-            width: 100%;
-        }
-        .blackSubmit {
-            border: 1px solid white;
-            padding: 14px;
-            background-color: black;
-            color: white;
-            margin-top: 15px;
-        }
-        #input {
-            width: 275px;
-            margin: auto;
-        }
-        .blackInput::placeholder {
-            color: white;
-        }
-        .footerIcons {
-            margin-top: 10px;
-            font-size: 30px;
-            padding-right: 15px;
-        }
-        .gap {
-            margin-top: 50px;
-        }
-        #footerBottom {
-            font-size: 15px;
-            padding-top: 30px;
-            color: #B7B7B8;
-            width: 90%;
-            display: flex;
-            margin: auto;
-        }
-        #footerBottom>div {
-            width: 50%;
-        }
-        #bottomTabs {
-            display: flex;
-            justify-content: space-evenly;
-        }
-        #bottomTabs>div>div {
-            width: 200px;
-            padding-top: 15px;
-            margin: auto;
-        }
-        #bottomIcon {
-            padding-top: 30px;
-            width: 50px;
-        }
-        /* Footer End */
-
       
 
     </style>
@@ -340,11 +19,11 @@
 
 <body>
     <!-- Header Start -->
-    <div id="container1">
+    <div id="header">
         <div id="top">
             <div id="left">
                 <div id="email">
-                    <a href="email_sign_up.html">EMAIL SIGN UP</a>
+                    <a href="signup.html">EMAIL SIGN UP</a>
                 </div>
                 <div id="find">
                     <img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Search-White.svg">
@@ -353,32 +32,32 @@
             </div>
             <div id="center">
                 <div id="title">
-                    <img src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png">
+                    <a href="index.html"><img src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png"></a>
                 </div>
                 <div id="tabs">
-                    <div><a>NEW</a></div>
-                    <div><a>BESTSELLERS</a></div>
-                    <div><a>FACE</a></div>
-                    <div><a>MAKEUP</a></div>
-                    <div><a>SKINCARE</a></div>
-                    <div><a>VIRTUAL SERVICES</a></div>
-                    <div><a>DISCOVER</a></div>
+                    <div><a href="/new.html">NEW</a></div>
+                    <div><a href="best.html">BESTSELLERS</a></div>
+                    <div><a href="face.html">FACE</a></div>
+                    <div><a href="/makeup.html">MAKEUP</a></div>
+                    <div><a href="skinCare.html">SKINCARE</a></div>
+                    <div><a href="virtual.html">VIRTUAL SERVICES</a></div>
+                    <div><a href="DISCOVER.html">DISCOVER</a></div>
                 </div>
             </div>
             <div id="right">
                 <div>
-                    <div><a>JOIN BB<u>ACCESS</u></a></div>
-                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"></div>
-                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></div>
-                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></div>
+                    <div><a href="login.html">JOIN BB<u>ACCESS</u></a></div>
+                    <div class="rightImage"><a href=""><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"></a></div>
+                    <div class="rightImage"><a href="login.html"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></a></div>
+                    <div class="rightImage" ><a href="cart.html"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></a></div>
                 </div>
             </div>
         </div>
         <div id="discount">
             <p>Get 15% off your first order plus free shipping everyday when you join BB Access</p>
-
         </div>
-        <!-- Header End -->
+    </div>
+    <!-- Header End -->
 
 
 
@@ -507,22 +186,22 @@
             <div id="footerLeft">
                 <div>
                     <p class="bold">NEED HELP?</p>
-                    <p class="mediumFont">Chat with an Artist</p>
-                    <p class="titleTop">Text An Artist</p>
-                    <p class="titleTop">Call Us (877)-310-9222</p>
-                    <p class="titleTop">Shipping & Returns</p>
-                    <p class="titleTop">FAQS</p>
-                    <p class="titleTop">Careers</p>
+                    <div><a href="" class="mediumFont">Chat with an Artist</a></div>
+                    <div><a href="" class="titleTop">Text An Artist</a></div>
+                    <div><a href="" class="titleTop">Call Us (877)-310-9222</a></div>
+                    <div><a href="" class="titleTop">Shipping & Returns</a></div>
+                    <div><a href="" class="titleTop">FAQS</a></div>
+                    <div><a href="" class="titleTop">Careers</a></div>
                     <select class="blackOption">
                         <option>CHOOSE LOCATION</option>
                     </select>
                 </div>
                 <div>
                     <p class="bold">MY BOBBI BROWN</p>
-                    <p class="titleTop">BB Access</p>
-                    <p class="titleTop">My Account</p>
-                    <p class="titleTop">My Orders</p>
-                    <p class="titleTop">Store Locator</p>
+                    <div><a href="" class="titleTop">BB Access</a></div>
+                    <div><a href="" class="titleTop">My Account</a></div>
+                    <div><a href="" class="titleTop">My Orders</a></div>
+                    <div><a href="" class="titleTop">Store Locator</a></div>
                 </div>
             </div>
             <div id="footerRight">
@@ -559,7 +238,6 @@
             </div>
         </div>
     </div>
-
     <!-- Footer End -->
     
 </body>

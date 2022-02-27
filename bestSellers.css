@@ -4,7 +4,7 @@ body {
   font-family: "BBText Regular",Helvetica,Arial,sans-serif;
   margin: 0px;
 }
-#container1 {
+#header {
   color: white;
 }
 #top {
@@ -93,7 +93,7 @@ img {
 .rightImage {
   height: 20px;
 }
-.rightImage>img {
+.rightImage>a>img {
   height: 100%;
 }
 /* Header End */
@@ -256,87 +256,93 @@ img {
    font-size: 50px;
  }
 
-  /* fotter */
-  #footer {
-    width: 100%;
-    height: 570px;
-    color: white;
-    margin-top: 30px;
-    background-color: black;
+  /* Footer Start */
+#footer {
+  width: 100%;
+  height: 570px;
+  color: white;
+  margin-top: 30px;
+  background-color: black;
 }
 .blackOption {
-    background-color: black;
-    color: white;
-    padding: 15px 45px;
-    font-size: 14px;
-    border: 1px solid white;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  padding: 15px 45px;
+  font-size: 14px;
+  border: 1px solid white;
 }
 .mediumFont {
-    font-size: 14px;
-    font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
 }
 #footerContents {
-    display: flex;
-    height: 350px;
-    border-bottom: 1px solid #B7B7B8;
-    padding-top: 40px;
+  display: flex;
+  height: 350px;
+  border-bottom: 1px solid #B7B7B8;
+  padding-top: 40px;
 }
 #footerLeft {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#footerLeft>div>div {
+  margin-top: 10px;
 }
 #footerRight {
-    width: 50%;
+  width: 50%;
 }
 .blackInput {
-    width: 100%;
+  width: 100%;
 }
 .blackSubmit {
-    border: 1px solid white;
-    padding: 14px;
-    background-color: black;
-    color: white;
-    margin-top: 15px;
+  border: 1px solid white;
+  padding: 14px;
+  background-color: black;
+  color: white;
+  margin-top: 15px;
 }
 #input {
-    width: 275px;
-    margin: auto;
+  width: 275px;
+  margin: auto;
 }
 .blackInput::placeholder {
-    color: white;
+  color: white;
 }
 .footerIcons {
-    margin-top: 10px;
-    font-size: 30px;
-    padding-right: 15px;
+  margin-top: 10px;
+  font-size: 30px;
+  padding-right: 15px;
 }
 .gap {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 #footerBottom {
-    font-size: 15px;
-    padding-top: 30px;
-    color: #B7B7B8;
-    width: 90%;
-    display: flex;
-    margin: auto;
+  font-size: 15px;
+  padding-top: 30px;
+  color: #B7B7B8;
+  width: 90%;
+  display: flex;
+  margin: auto;
 }
 #footerBottom>div {
-    width: 50%;
+  width: 50%;
 }
 #bottomTabs {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 #bottomTabs>div>div {
-    width: 200px;
-    padding-top: 15px;
-    margin: auto;
+  width: 200px;
+  padding-top: 15px;
+  margin: auto;
 }
 #bottomIcon {
-    padding-top: 30px;
-    width: 50px;
+  padding-top: 30px;
+  width: 50px;
 }
-
-/* fotter end */
+#bottomTabs>div>div>a {
+  color: #B7B7B8;
+}
+/* Footer End */

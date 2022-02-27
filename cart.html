@@ -5,339 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cart.css">
     <script src="https://kit.fontawesome.com/32f181d7c4.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
-        /* Header */
-        body {
-            font-family: "BBText Regular",Helvetica,Arial,sans-serif;
-            margin: 0px;
-        }
-        #container1 {
-            color: white;
-        }
-        #top {
-            width: 100%;
-            height: 120px;
-            padding-top: 30px;
-            display: flex;
-            background-color: black;
-        }
-        #email {
-            letter-spacing: 2px;
-            font-size: 11px;
-            font-weight: bold;
-        }
-        #email>a {
-            color: white;
-            text-decoration: none;
-        }
-        #search {
-            font-size: 15px;
-            font-weight: bold;
-            width: 150px;
-            margin-bottom: 5px;
-            background-color: black;
-            border: 0px solid black;
-        }
-        #find {
-            padding-top: 65px;
-            height: 20px;
-            display: flex;
-            padding-bottom: 5px;
-            border-bottom: 1px solid white;
-        }
-        #find>img {
-            height: 100%;
-        }
-        #left {
-            width: 20%;
-            height: 130px;
-            font-size: small;
-        }
-        #left>div {
-            width: 60%;
-            margin: auto;
-        }
-        #center {
-            width: 60%;
-            height: 150px;
-        }
-        #title {
-            width: 345px;
-            margin: auto;
-        }
-        img {
-            width: 100%;
-        }
-        #tabs {
-            padding-top: 50px;
-            width: 90%;
-            font-size: 14px;
-            display: flex;
-            margin: auto;
-            justify-content: space-between;
-        }
-        #tabs>div>a{
-            text-decoration: none;
-            color: white;
-        }
-        #tabs>div>a:hover{
-            border-bottom: 2px solid white;
-        }
-        #right {
-            width: 20%;
-            height: 130px;
-        }
-        #right>div {
-            width: 70%;
-            display: flex;
-            justify-content: space-between;
-            letter-spacing: 1px;
-            font-size: 11px;
-            font-weight: bold;
-            margin: auto;
-        }
-        .rightImage {
-            height: 20px;
-        }
-        .rightImage>img {
-            height: 100%;
-        }
-        /* Header End */
 
-        #box {
-            color: black;
-            font-family: "BBText Regular",Helvetica,Arial,sans-serif;
-            font-size: 14px;
-            width: 68%;
-            padding-top: 40px;
-            margin: auto;
-            display: flex;
-            border-bottom: 1px solid lightgrey;
-        }
-        #leftBox {
-            width: 60%;
-            height: 100%;
-        }
-        #rightBox {
-            width: 40%;
-            height: 100%;
-            margin-left: 30px;
-        }
-        .boxTitle {
-            padding-left: 20px;
-        }
-        .boxHead {
-            font-size: 25px;
-        }
-        .backgroundGrey {
-            font-size: 14px;
-            background-color: #eff0f0;
-            padding-left: 20px;
-            padding-top: 3px;
-            padding-bottom: 3px;
-            border-top: 2px solid black;
-        }
-        .blackButton {
-            background-color: black;
-            font-size: 14px;
-            color: white;
-            font-weight: bold;
-            padding: 7px 10px;
-            border: 1px solid black;
-        }
-        .cartOptions {
-            margin-top: 50px;
-            display: flex;
-            padding-bottom: 40px;
-            justify-content: space-between;
-        }
-        #table {
-            margin-top: 20px;
-            width: 100%;
-            border-collapse: collapse;
-        }
-        #tableHead {
-            text-align: center;
-            font-size: 17px;
-        }
-        tr>td:first-child {
-            width: 50px;
-        }
-        tr>td {
-            text-align: center;
-        }
-        tr>td:last-child {
-            text-align: right;
-        }
-        tr>td>select {
-            width: 70px;
-            height: 40px;
-            padding: 5px;
-        }
-        #tableBody>tr {
-            border-top: 1px solid lightgrey;
-        }
-        .quantityButton {
-            margin-left: 10px;
-            background-color: white;
-            color: black;
-            font-size: medium;
-        }
-        .checkout {
-            display: flex;
-            width: 100%;
-            padding-top: 10px;
-            padding-bottom: 30px;
-            border-top: 1px solid lightgrey;
-        }
-        .checkout2 {
-            display: flex;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-top: 1px solid lightgrey;
-        }
-        .checkout3>img {
-            width: 80px;
-            height: 17px;
-        }
-        .leftCheck {
-            width: 60%;
-            text-align: right;
-        }
-        .leftCheck>select {
-            font-size: 14px;
-            padding: 3px;
-        }
-        .rightCheck {
-            width: 40%;
-            text-align: right;
-        }
-        .checkout3 {
-            border-top: 1px solid lightgrey;
-        }
-        #rightAlign {
-            text-align: right;
-        }
-        #rightBox1 {
-            background-color: #eff0f0;
-            padding: 5px 20px;
-        }
-        #rightBox1>img {
-            width: 20%;
-        }
-        .boxInput {
-            padding-top: 30px;
-            border-top: 1px solid black;
-        }
-        #rightBox1>div>input {
-            padding: 10px;
-            width: 93%;
-        }
-        #offerBox {
-            display: flex;
-            justify-content: space-between;
-        }
-        .whiteButton {
-            color: #949494;
-            font-weight: bold;
-            background-color: white;
-            font-size: 11px;
-            padding-top: 10px;
-            border: 0px solid black;
-            border-bottom: 2px solid #949494;
-        }
-        #offerBox>button {
-            background-color: #eff0f0;
-        }
-        #getPoints {
-            margin-top: 20px;
-            text-align: center;
-            font-weight: bold;
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-        }
-        .PriceTable {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .totalPrice {
-            font-weight: bold;
-            margin-top: 40px;
-        }
-        .shipping {
-            color: #949494;
-        }
-        #rightBox2>img {
-            width: 20%;
-        }
-        #rightBox2>select {
-            width: 100%;
-            padding: 10px;
-        }
-        #rightBox2>p>a {
-            color: #949494;
-            text-decoration: underline;
-        }
-        #rightBox2>button {
-            background-color: white;
-            border: 0px solid white;
-        }
-        #rightBox2>i {
-            color: black;
-            padding: 1px;
-        }
-        .rightLast {
-            margin-top: 20px;
-        }
-
-        /* Footer Start */
-        #footer {
-            width: 100%;
-            height: 200px;
-            color: white;
-            margin-top: 60px;
-            background-color: black;
-        }
-        #footerBottom {
-            font-size: 15px;
-            padding-top: 30px;
-            color: #B7B7B8;
-            width: 90%;
-            display: flex;
-            margin: auto;
-        }
-        #footerBottom>div {
-            width: 50%;
-        }
-        #bottomTabs {
-            display: flex;
-            justify-content: space-evenly;
-        }
-        #bottomTabs>div>div {
-            width: 200px;
-            padding-top: 15px;
-            margin: auto;
-        }
-        .colorGrey {
-            color: #b7b7b8;
-        }
-        #bottomIcon {
-            padding-top: 30px;
-            width: 50px;
-        }
-        /* Footer End */
     </style>
 </head>
 <body>
     <!-- Header Start -->
-    <div id="container1">
+    <div id="header">
         <div id="top">
             <div id="left">
                 <div id="email">
-                    <a href="email_sign_up.html">EMAIL SIGN UP</a>
+                    <a href="signup.html">EMAIL SIGN UP</a>
                 </div>
                 <div id="find">
                     <img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Search-White.svg">
@@ -346,26 +27,29 @@
             </div>
             <div id="center">
                 <div id="title">
-                    <img src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png">
+                    <a href="index.html"><img src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png"></a>
                 </div>
                 <div id="tabs">
                     <div><a href="/new.html">NEW</a></div>
-                    <div><a>BESTSELLERS</a></div>
-                    <div><a href="/face.html">FACE</a></div>
+                    <div><a href="best.html">BESTSELLERS</a></div>
+                    <div><a href="face.html">FACE</a></div>
                     <div><a href="/makeup.html">MAKEUP</a></div>
-                    <div><a>SKINCARE</a></div>
-                    <div><a>VIRTUAL SERVICES</a></div>
-                    <div><a>DISCOVER</a></div>
+                    <div><a href="skinCare.html">SKINCARE</a></div>
+                    <div><a href="virtual.html">VIRTUAL SERVICES</a></div>
+                    <div><a href="DISCOVER.html">DISCOVER</a></div>
                 </div>
             </div>
             <div id="right">
                 <div>
-                    <div><a>JOIN BB<u>ACCESS</u></a></div>
-                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"></div>
-                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></div>
-                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></div>
+                    <div><a href="login.html">JOIN BB<u>ACCESS</u></a></div>
+                    <div class="rightImage"><a href=""><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"></a></div>
+                    <div class="rightImage"><a href="login.html"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></a></div>
+                    <div class="rightImage" ><a href="cart.html"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></a></div>
                 </div>
             </div>
+        </div>
+        <div id="discount">
+            <p>Get 15% off your first order plus free shipping everyday when you join BB Access</p>
         </div>
     </div>
     <!-- Header End -->
@@ -498,6 +182,44 @@
     
     <!-- Footer Start -->
     <div id="footer">
+        <div id="footerContents">
+            <div id="footerLeft">
+                <div>
+                    <p class="bold">NEED HELP?</p>
+                    <div><a href="" class="mediumFont">Chat with an Artist</a></div>
+                    <div><a href="" class="titleTop">Text An Artist</a></div>
+                    <div><a href="" class="titleTop">Call Us (877)-310-9222</a></div>
+                    <div><a href="" class="titleTop">Shipping & Returns</a></div>
+                    <div><a href="" class="titleTop">FAQS</a></div>
+                    <div><a href="" class="titleTop">Careers</a></div>
+                    <select class="blackOption">
+                        <option>CHOOSE LOCATION</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="bold">MY BOBBI BROWN</p>
+                    <div><a href="" class="titleTop">BB Access</a></div>
+                    <div><a href="" class="titleTop">My Account</a></div>
+                    <div><a href="" class="titleTop">My Orders</a></div>
+                    <div><a href="" class="titleTop">Store Locator</a></div>
+                </div>
+            </div>
+            <div id="footerRight">
+                <div id="input">
+                    <input type="text" class="blackInput blackSubmit" placeholder="ENTER YOUR EMAIL">
+                    <input type="number" class="blackInput blackSubmit" placeholder="ENTER YOUR MOBILE PHONE">
+                    <button class="blackSubmit">SUBMIT</button>
+                    <div>
+                        <p class="bold gap">FOLLOW US</p>
+                        <i class="fa-brands fa-facebook-f footerIcons"></i>
+                        <i class="fa-brands fa-twitter footerIcons"></i>
+                        <i class="fa-brands fa-youtube footerIcons"></i>
+                        <i class="fa-brands fa-instagram footerIcons"></i>
+                        <i class="fa-brands fa-pinterest footerIcons"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="footerBottom">
             <div>
                 <p>© Bobbi Brown Professional Cosmetics, Inc. All worldwide rights reserved.</p>
@@ -520,81 +242,4 @@
 </body>
 </html>
 
-<script>
-    var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
-
-    function displayCartItems(){
-
-        document.getElementById("tableBody").innerHTML = "";
-
-        cartArr.map(function(elem, index){
-            var row = document.createElement("tr");
-
-            var image = document.createElement("img");
-            image.setAttribute("src", elem.image);
-
-            var photo = document.createElement("td");
-            photo.append(image);
-
-            var name = document.createElement("td");
-            name.innerText = elem.name;
-
-            var quantity = document.createElement("td");
-
-            deductButton = document.createElement("button");
-            deductButton.innerText = "-";
-            deductButton.setAttribute("class","quantityButton");
-            deductButton.addEventListener("click", function(){
-                decreaseQuantity(index);
-            })
-
-            quantity.textContent = elem.quantity;
-
-            var addButton = document.createElement("button");
-            addButton.innerText = "+";
-            addButton.setAttribute("class","quantityButton");
-            addButton.addEventListener("click", function(){
-                increaseQuantity(index)
-            });
-            quantity.append(deductButton, addButton);
-
-            var price = document.createElement("td");
-            price.innerText = "$"+elem.price+".00";
-
-            var total = document.createElement("td");
-            total.innerText = "$"+(elem.price*elem.quantity)+".00";
-
-            row.append(photo,name,quantity,price,total);
-            document.getElementById("tableBody").append(row);
-        });
-    }
-    
-    displayCartItems(cartArr);
-    updateTotal();
-
-    function updateTotal(){
-        var subTotal = cartArr.reduce(function (acc,elem){
-            return acc + (elem.price*elem.quantity);
-        },0);
-        document.getElementById("subTotal").textContent = "$"+subTotal+".00";
-        document.getElementById("total").textContent = "$"+subTotal+".00";
-        document.getElementById("grandTotal").textContent = "$"+subTotal+".00";
-        document.getElementById("Total").textContent = "$"+subTotal+".00";
-    }
-
-    function decreaseQuantity(index){
-        cartArr[index].quantity--;
-        localStorage.setItem("cartItems",JSON.stringify(cartArr));
-
-        displayCartItems();
-        updateTotal();
-    }
-    
-    function increaseQuantity(index){
-        cartArr[index].quantity++;
-        localStorage.setItem("cartItems",JSON.stringify(cartArr));
-
-        displayCartItems();
-        updateTotal();
-    }
-</script>
+<script src="cart.js"></script>

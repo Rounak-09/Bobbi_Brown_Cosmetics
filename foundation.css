@@ -96,58 +96,68 @@ img {
     height: 100%;
 }
 /* Header End */
-
-body{           
-
-    background: url('https://www.bobbibrowncosmetics.com/media/images/account/email-sms-signup-envelope.gif') no-repeat center 285px;
+#imag{
+    background-image:url("https://www.bobbibrowncosmetics.com/media/export/cms/nav_touts/new/20210811_BB_FY21_LuxeDefiningLipstick_Engage_Product_ShadeRange_NA_GNAV_600x300.jpg") ;
+    height: 300px;
 }
-.text{
-    margin-top: 107px;
-    margin-left: 367px;
-    margin-bottom: 337px;
+#imag>h1{
+text-align: center;
+color: white;
+padding-top: 100px;
+width: 30%;
+margin: auto;
+letter-spacing: 2px;
+
+}
+#imag>p{
+    margin-bottom: -60px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: larger;
- 
-    height: 100px;
-    width: 50%;
+color: white;
+padding-top: 40px;
+width: 60%;
+margin: auto;
+letter-spacing: 2px;
+margin-top: -40px;
+}
+#step{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#step>h3,h4{
+    width: 25%;
+    margin: auto;
+    color: black;
+}
+img+p{
+    color: black;
+}
+#btn{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
     
 }
-.Required{
-    text-align: start;
+#btn>div{
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 40px;
+    color: black;
 }
-.input{
-    width: 100%;
+hr{
+    width: 90%;
+    margin-top: 50px;
+}
+#skin{
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+
 }
-input{
-    height: 25px;
-    width: 220px;
-}
-.self{
-    font-size: small;
-    text-align: justify;
-    display: flex;
-    height: 30px;
-    width: 95%;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-.self > button{
-    color:whitesmoke;
-    background-color: black;
-    font-weight: bolder;
-    cursor: pointer;
-}
-.self >p { width: 443px;}
-.self > button:hover{
-    background-color: red;
-}
-.checkbox{
-    height: 15px;
-    margin-left: -100px;
-    margin-right: -100px;
+.r{
+    margin-top: -20px;
+    color: #808080;
 }
 
 /* Footer Start */

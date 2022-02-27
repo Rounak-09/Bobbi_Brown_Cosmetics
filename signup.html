@@ -12,7 +12,7 @@
 
 <body>
     <!-- Header Start -->
-    <div id="container1">
+    <div id="header">
         <div id="top">
             <div id="left">
                 <div id="email">
@@ -25,73 +25,75 @@
             </div>
             <div id="center">
                 <div id="title">
-                    <img src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png">
+                    <a href="index.html"><img src="https://www.bobbibrowncosmetics.com/media/export/cms/logo.png"></a>
                 </div>
                 <div id="tabs">
                     <div><a href="/new.html">NEW</a></div>
-                    <div><a>BESTSELLERS</a></div>
-                    <div><a href="/face.html">FACE</a></div>
+                    <div><a href="best.html">BESTSELLERS</a></div>
+                    <div><a href="face.html">FACE</a></div>
                     <div><a href="/makeup.html">MAKEUP</a></div>
-                    <div><a>SKINCARE</a></div>
-                    <div><a>VIRTUAL SERVICES</a></div>
-                    <div><a>DISCOVER</a></div>
+                    <div><a href="skinCare.html">SKINCARE</a></div>
+                    <div><a href="virtual.html">VIRTUAL SERVICES</a></div>
+                    <div><a href="DISCOVER.html">DISCOVER</a></div>
                 </div>
             </div>
             <div id="right">
                 <div>
-                    <div><a>JOIN BB<u>ACCESS</u></a></div>
-                    <div class="rightImage"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"></div>
-                    <div class="rightImage" onclick="redirect()" style="cursor: pointer;"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></div>
-                    <div class="rightImage" ><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></div>
+                    <div><a href="login.html">JOIN BB<u>ACCESS</u></a></div>
+                    <div class="rightImage"><a href=""><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"></a></div>
+                    <div class="rightImage"><a href="login.html"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"></a></div>
+                    <div class="rightImage" ><a href="cart.html"><img src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"></a></div>
                 </div>
             </div>
         </div>
         <div id="discount">
             <p>Get 15% off your first order plus free shipping everyday when you join BB Access</p>
         </div>
-        <!-- Header End -->
+    </div>
+    <!-- Header End -->
+
 
         <!-- EMAIL SIGNUP -->
-        <div class="text" >
-            <div>
-                <p style="color: black; font-size: 25px;">WANT A SNEAK PEEK?</p>
-            </div>
-            <div>
-                <p style="color: black;">Sign up for Bobbi Brown emails and be the first to know about exclusive offers, pre-sales, new collections and more.</p>
-            </div>
-            <div class="Required" style="color: black;">
-                * Required field
-            </div>
-            <div class="input">
-                <input type="text" placeholder="*First name" id="first_name">
-                <input type="text" placeholder="*Last name" id="last_name">
-                <input type="text" placeholder="*Email Id" id="email_id">
-            </div>
-            <div class="input" style="margin-top: 10px; color: black;">
-                Birthday:
-                <div style="margin-left: -7px;">
-                    <input type="number" style="width: 50px;" placeholder="DD" id="dd">
-                    <input type="number" style="width: 50px;" placeholder="MM" id="mm">
-                </div>
-                <input type="number" placeholder="*Mobile no" id="mobile_no">
-                <input type="zipcode" placeholder="* Zipcode" id="zip_code">
-            </div>
-
-            <div class="self">
-                <p> <input type="checkbox" class="checkbox" name="SMSPROMO_SMS_PROMOTIONS" value="1" >
-                   <span style="color: black;">
-                    I'd like to receive recurring advertising text messages
-                    (SMS and MMS) from Bobbi Brown Cosmetics. I understand
-                    these text messages may be sent via an autodialer and
-                    I do not need to provide consent to text messaging to 
-                    purchase from Bobbi Brown Cosmetics. I agree with the 
-                    Mobile Terms and Conditions. Msg & data rates may apply
-                   </span>
-                </p>
-                <button onclick="signup()">SIGN UP</button>
-            </div>
-           
+    <div class="text" >
+        <div>
+            <p style="color: black; font-size: 25px;">WANT A SNEAK PEEK?</p>
         </div>
+        <div>
+            <p style="color: black;">Sign up for Bobbi Brown emails and be the first to know about exclusive offers, pre-sales, new collections and more.</p>
+        </div>
+        <div class="Required" style="color: black;">
+            * Required field
+        </div>
+        <div class="input">
+            <input type="text" placeholder="*First name" id="first_name">
+            <input type="text" placeholder="*Last name" id="last_name">
+            <input type="text" placeholder="*Email Id" id="email_id">
+        </div>
+        <div class="input" style="margin-top: 10px; color: black;">
+            Birthday:
+            <div style="margin-left: -7px;">
+                <input type="number" style="width: 50px;" placeholder="DD" id="dd">
+                <input type="number" style="width: 50px;" placeholder="MM" id="mm">
+            </div>
+            <input type="number" placeholder="*Mobile no" id="mobile_no">
+            <input type="zipcode" placeholder="* Zipcode" id="zip_code">
+        </div>
+
+        <div class="self">
+            <p> <input type="checkbox" class="checkbox" name="SMSPROMO_SMS_PROMOTIONS" value="1" >
+                <span style="color: black;">
+                I'd like to receive recurring advertising text messages
+                (SMS and MMS) from Bobbi Brown Cosmetics. I understand
+                these text messages may be sent via an autodialer and
+                I do not need to provide consent to text messaging to 
+                purchase from Bobbi Brown Cosmetics. I agree with the 
+                Mobile Terms and Conditions. Msg & data rates may apply
+                </span>
+            </p>
+            <button onclick="signup()">SIGN UP</button>
+        </div>
+        
+    </div>
    
     <!-- Footer Start -->
     <div id="footer">
@@ -99,22 +101,22 @@
             <div id="footerLeft">
                 <div>
                     <p class="bold">NEED HELP?</p>
-                    <p class="mediumFont">Chat with an Artist</p>
-                    <p class="titleTop">Text An Artist</p>
-                    <p class="titleTop">Call Us (877)-310-9222</p>
-                    <p class="titleTop">Shipping & Returns</p>
-                    <p class="titleTop">FAQS</p>
-                    <p class="titleTop">Careers</p>
+                    <div><a href="" class="mediumFont">Chat with an Artist</a></div>
+                    <div><a href="" class="titleTop">Text An Artist</a></div>
+                    <div><a href="" class="titleTop">Call Us (877)-310-9222</a></div>
+                    <div><a href="" class="titleTop">Shipping & Returns</a></div>
+                    <div><a href="" class="titleTop">FAQS</a></div>
+                    <div><a href="" class="titleTop">Careers</a></div>
                     <select class="blackOption">
                         <option>CHOOSE LOCATION</option>
                     </select>
                 </div>
                 <div>
                     <p class="bold">MY BOBBI BROWN</p>
-                    <p class="titleTop">BB Access</p>
-                    <p class="titleTop">My Account</p>
-                    <p class="titleTop">My Orders</p>
-                    <p class="titleTop">Store Locator</p>
+                    <div><a href="" class="titleTop">BB Access</a></div>
+                    <div><a href="" class="titleTop">My Account</a></div>
+                    <div><a href="" class="titleTop">My Orders</a></div>
+                    <div><a href="" class="titleTop">Store Locator</a></div>
                 </div>
             </div>
             <div id="footerRight">
