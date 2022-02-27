@@ -1,0 +1,347 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#body a {
+  text-decoration: none;
+  color: black;
+}
+button:hover {
+  cursor: pointer;
+}
+/* Head */
+#container1 {
+  color: white;
+}
+#top {
+  width: 100%;
+  height: 140px;
+  padding-top: 30px;
+  display: flex;
+  background-color: black;
+}
+#left {
+  width: 20%;
+  height: 108px;
+  font-size: small;
+}
+#left > div {
+  width: 60%;
+  margin: auto;
+}
+#email {
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: bold;
+}
+#email > a {
+  text-decoration: none;
+  color: white;
+}
+#find {
+  padding-top: 40px;
+}
+#search {
+  font-size: 15px;
+  width: 150px;
+  letter-spacing: 1px;
+  background-color: black;
+  border: none;
+}
+#center {
+  width: 60%;
+  height: 108px;
+}
+#title {
+  width: 50%;
+  margin: auto;
+}
+#title > img {
+  width: 100%;
+}
+#tabs {
+  padding-top: 37px;
+  width: 90%;
+  font-size: 14px;
+  display: flex;
+  margin: auto;
+  letter-spacing: 0.7px;
+  justify-content: space-between;
+}
+#tabs > div > a {
+  text-decoration: none;
+  color: white;
+}
+#tabs > div > a:hover {
+  border-bottom: 1.5px solid white;
+  cursor: pointer;
+}
+#right {
+  width: 20%;
+  height: 108px;
+}
+#right > div {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: bold;
+}
+#right > div > a {
+  text-decoration: none;
+  color: white;
+}
+.icons {
+  font-size: 15px;
+  padding-right: 5px;
+}
+#discount {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 1px;
+  background-color: rgb(58, 58, 58);
+}
+/* Head End */
+
+/* Body */
+.head {
+  width: 100%;
+  height: 280px;
+  margin-top: -45px;
+  background-image: url(https://hips.hearstapps.com/ell.h-cdn.co/assets/16/39/1600x800/landscape-1475096865-eyeliner-lede.jpg?resize=1200:*);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.head > p {
+  text-align: center;
+  color: white;
+  padding-top: 80px;
+  font-size: 45px;
+  letter-spacing: 2px;
+}
+.head2 {
+  width: 97%;
+  height: 120px;
+  margin: auto;
+}
+.up {
+  width: 100%;
+  height: 37px;
+  display: flex;
+  margin-top: 10px;
+  font-size: 12.5px;
+  justify-content: space-between;
+}
+.up > a[href="./index.html"] {
+  text-decoration: none;
+  color: black;
+}
+.up > a[href="./index.html"]:hover {
+  border: 1px solid black;
+  color: black;
+}
+.up > select {
+  border: 1.5px solid black;
+  border-radius: 0px;
+  padding-left: 10px;
+}
+#body {
+  display: grid;
+  width: 97%;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 520px);
+  gap: 30px;
+  box-sizing: border-box;
+}
+#body > div {
+  text-align: center;
+  box-sizing: border-box;
+}
+#body div > a:nth-child(1) {
+  border: 0px;
+}
+#body div > a:nth-child(1) > img {
+  width: 90%;
+  height: 50%;
+}
+#body div > h4:nth-child(2) {
+  margin-top: 2px;
+  letter-spacing: -0.5px;
+}
+#body div > p:nth-child(3) {
+  margin-top: -20px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+#body div > p:nth-child(4) .material-icons-outlined {
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+#body div > p:nth-child(5) {
+  margin-top: -10px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+#body div > button:nth-child(6) {
+  width: 150px;
+  height: 30px;
+  font-weight: 550;
+  font-size: 11px;
+  color: white;
+  letter-spacing: 0.3px;
+  border: none;
+  background-color: black;
+}
+
+.corrector {
+  background-image: url(https://www.sandrascloset.com/wp-content/uploads/2022/01/SHOT_07_BB_CORRECTOR_CONCEALER_023_MAIN_sRGB300-554x740.jpg);
+  background-size: cover;
+  color: white;
+}
+#body .corrector > p {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#body .corrector > h3:nth-child(2) {
+  font-size: 35px;
+  margin-top: -14px;
+  letter-spacing: 1.3px;
+  font-weight: 200;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#body .corrector > h3:nth-child(3) {
+  font-size: 35px;
+  margin-top: -35px;
+  letter-spacing: 1.3px;
+  font-weight: 200;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#body .corrector > button {
+  margin-top: 30px;
+  color: black;
+  background-color: white;
+  border: none;
+  height: 33px;
+  width: 100px;
+  font-size: 12px;
+  font-weight: 550;
+}
+#body .corrector > button:hover {
+  background-color: black;
+  color: white;
+}
+.endPart {
+  width: 100%;
+  height: 100px;
+  padding-top: 5px;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgb(250, 248, 248);
+}
+/* Footer */
+#footer {
+  width: 100%;
+  height: 570px;
+  color: white;
+  margin-top: 30px;
+  background-color: black;
+}
+.blackOption {
+  background-color: black;
+  color: white;
+  padding: 15px 45px;
+  font-size: 14px;
+  border: 1px solid white;
+}
+.mediumFont {
+  font-size: 14px;
+  font-weight: bold;
+}
+#footerContents {
+  display: flex;
+  height: 390px;
+  border-bottom: 1px solid #b7b7b8;
+  padding-top: 40px;
+}
+#footerLeft {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#footerRight {
+  width: 50%;
+}
+.blackInput {
+  width: 100%;
+}
+.blackSubmit {
+  border: 1px solid white;
+  padding: 14px;
+  background-color: black;
+  color: white;
+  margin-top: 15px;
+}
+#input {
+  width: 275px;
+  margin: auto;
+}
+.blackInput::placeholder {
+  color: white;
+}
+.footerIcons {
+  margin-top: 10px;
+  font-size: 30px;
+  padding-right: 15px;
+}
+.gap {
+  margin-top: 50px;
+}
+#footerBottom {
+  font-size: 15px;
+  padding-top: 30px;
+  color: #b7b7b8;
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+#footerBottom > div {
+  width: 50%;
+}
+#bottomTabs {
+  display: flex;
+  justify-content: space-evenly;
+}
+#bottomTabs > div > div {
+  width: 200px;
+  padding-top: 15px;
+  margin: auto;
+}
+#bottomIcon {
+  padding-top: 30px;
+  width: 50px;
+}
+/* Footer End */
+
+/* Media Queries */
+
+@media all and (max-width: 700px) {
+  #body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .endPart {
+    height: 200px;
+  }
+}
