@@ -3,7 +3,7 @@ var bobbibrowm = [
     image :"https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_E1LM01_600x600_0.jpg",
     name:"VITAMIN ENRICHED FACE BASE",
     details:"Multitasking,moisturizing primer",
-    price:"64.00",
+    price:64,
     rating:634,
     },
     {
@@ -12,7 +12,7 @@ var bobbibrowm = [
     name:"SKIN LONG-WEAR WEIGHTLESS FOUNDATION SPF15",
     details:"Medium-Coverage Matte Foundation",
 
-    price:"50.00",
+    price:50,
     rating:253,
     },
    {
@@ -21,7 +21,7 @@ var bobbibrowm = [
     name:"EXTRA LIP TINT",
     details:"Color-Enhancing Lip Balm",
 
-    price:"34.00",
+    price:34,
     rating:24,
    },
    
@@ -31,7 +31,7 @@ var bobbibrowm = [
     name:"SHERR FINISH PRESSED POWDER",
     details:"Oil-Absorbing Setting Powder",
 
-    price:"45.00",
+    price:45,
     rating:28,
 
    },
@@ -41,7 +41,7 @@ var bobbibrowm = [
     name:"LONG-WEAR CREAM SHADOW STICK",
     details:"Long-Lasting Cream Eye Shadow",
 
-    price:"30.00",
+    price:30,
     rating:920,
    },
    {
@@ -50,7 +50,7 @@ var bobbibrowm = [
     name:"HIGHLIGHTING POWDER",
     details:"Pearlescent Glow Highlighter",
 
-    price:"60.00",
+    price:60,
     rating:282,
    },
 
@@ -60,8 +60,7 @@ var bobbibrowm = [
     name: "SOOTHING CLEANSING OIL",
     details: "Makeup Remover and Face Cleanser",
     rating: 10,
-    price: 50,
-  }, 
+    price:5}, 
 
    {
     anc:"",
@@ -69,7 +68,7 @@ var bobbibrowm = [
     name:"LIGHT BISQUE",
     details:"Dark Circles Color Corrector",
 
-    price:"54.00",
+    price:54,
     rating:555,
    },
    {
@@ -78,7 +77,7 @@ var bobbibrowm = [
     name:"VITAMIN ENRICHED FACE BASE",
     details:"Multitasking,moisturizing primer",
 
-    price:"24.00",
+    price:24,
     rating:5522,
    },
    {
@@ -87,7 +86,7 @@ var bobbibrowm = [
     name:"SOOTHING CLEANSING OIL",
     details:"Makeup Remover and Face Cleanser",
 
-    price:"79.00",
+    price:79,
     rating:245,
    },
    {
@@ -96,7 +95,7 @@ var bobbibrowm = [
     name:"CRUSHED OIL-INFUSED GLOSS",
     details:"Non-Sticky, Hydrating Lip Gloss",
 
-    price:"64.00",
+    price:64,
     rating:552,
    },
    {
@@ -105,7 +104,7 @@ var bobbibrowm = [
     name:"CRUSHED LIP COLOR",
     details:"Lipstick Meets Lip Balm",
 
-    price:"49.00",
+    price:49,
     rating:468,
    },
    {
@@ -114,7 +113,7 @@ var bobbibrowm = [
     name:"SMOKEY EYE MASCARA",
     details:"Mascara for Volume and Length",
 
-    price:"32.00",
+    price:32,
     rating:248,
    },
    {
@@ -123,7 +122,7 @@ var bobbibrowm = [
     name:"INSTANT FULL COVER CONCEALER",
     details:"Undereye Dark Circles Concealer",
 
-    price:"32.00",
+    price:32,
     rating:28,
    },
    {
@@ -132,7 +131,7 @@ var bobbibrowm = [
     name:"SKIN FOUNDATION STICK",
     details:"Moisturizing Stick Foundation",
 
-    price:"37.00",
+    price:37,
     rating:45,
    },
    {
@@ -141,7 +140,7 @@ var bobbibrowm = [
     name:"SKIN CLARIFIER NO.75",
     details:"Pore-Minimizing Face Serum",
 
-    price:"64.00",
+    price:64,
     rating:210,
    },
    {
@@ -150,7 +149,7 @@ var bobbibrowm = [
     name:"HYDRATING EYE CREAM",
     details:"Gentle, quick-absorbing cream",
 
-    price:"56.00",
+    price:56,
     rating:28,
    },
    {
@@ -159,7 +158,7 @@ var bobbibrowm = [
     name:"PERFECTLY DEFINED LONG-WEAR BROW PENCIL",
     details:"Precision eyebrow pencil",
 
-    price:"45.00",
+    price:45,
     rating:66,
    },
    {
@@ -168,7 +167,7 @@ var bobbibrowm = [
     name:"LONG-WEAR GEL EYELINER",
     details:"Smudgeproof, Waterproof Eyeliner",
 
-    price:"64.00",
+    price:64,
     rating:901,
    },
    {
@@ -177,7 +176,7 @@ var bobbibrowm = [
     name:"BRONZING POWDER",
     details:"Sun-kissed, matte-finish bronzer",
 
-    price:"64.00",
+    price:64,
     rating:444,
    },
    {
@@ -186,7 +185,7 @@ var bobbibrowm = [
     name:"BEACH",
     details:"Light, summer-inspired perfume",
 
-    price:"62.00",
+    price:62,
     rating:285,
    },
    {
@@ -195,7 +194,7 @@ var bobbibrowm = [
     name:"MINI HIGHLIGHTING POWDER",
     details:"Pearlescent Glow on the Go",
 
-    price:"25.00",
+    price:25,
     rating:348,
    },
 
@@ -205,7 +204,7 @@ var bobbibrowm = [
     name:"HYDRATING FACE CREAM",
     details:"Lightweight Face Moisturizerr",
 
-    price:"87.00",
+    price:87,
     rating:208,
   }
 ];
