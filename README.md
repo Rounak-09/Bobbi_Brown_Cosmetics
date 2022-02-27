@@ -1,7 +1,7 @@
 # Bobbi_Brown_Cosmetics
 Construct Week Project, UNIT-2
 
-In this project, we have tried to clone the website bobbibrowncosmetics.com and most of its features. 
+In this project, we have tried to clone the website bobbibrowncosmetics.com
 
 The step by step process to use this website:-
 1. When you visit the home page you can see information about different offers and products.
