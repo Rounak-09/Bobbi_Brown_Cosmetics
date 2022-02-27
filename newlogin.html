@@ -124,6 +124,7 @@
             font-weight: bolder;
             font-size: small;
             margin-left: 340px;
+            padding-top: 30px;
            
             
             
@@ -147,6 +148,7 @@
             font-weight: bolder;
             font-size: small;
             margin-right: 340px;
+            padding-top: 30px;
             
             
         }
@@ -158,6 +160,7 @@
             background-color: black;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-weight: bolder;
+            border: 0px solid red;
            
         }
 
@@ -205,11 +208,20 @@
             font-size: 11px;
             text-align: initial;
             line-height: 18px;
+            border: 0px solid red;
+            height: 101px;
+            width: 307px;
+            font-weight: lighter;
+           
         }
         .SSelf{
             font-size: 11px;
             text-align: initial;
             line-height: 18px;
+            height: 54px;
+            width: 307px;
+            font-weight: lighter;
+            border: 0px solid red;
         }
         .lin2{
             border: 1px solid black;
@@ -217,8 +229,9 @@
             height: 0px;
             width: 381px;
             margin-left: 302px;
-            margin-top: 36px;
+            margin-top: 62px;
             background-color: black;
+           
         }
         .lin3{
             display: flex;
@@ -233,7 +246,7 @@
         }
        
 
-        }
+        
         
         .Bdiv{
             border: 0px solid gray;
@@ -402,15 +415,15 @@
         
         <div class="ACCOUNT">
             <div class="newaccount">
-                <p>ALREADY HAVE AN ACCOUNT?</p>
-                <p style="font-size: larger;color: black;">CONTINUE</p>
+                <p style="letter-spacing: 2px;">ALREADY HAVE AN ACCOUNT?</p>
+                <p style="font-size: larger;color: black; letter-spacing: 3px;">CONTINUE</p>
                 <div class="inpt">
-                    <input type="text" class="inputtype" placeholder="*EMAIL ADDRESS"  />
+                    <input type="text" class="inputtype" placeholder="*EMAIL ADDRESS" id="email_id"  />
 
                 </div>
                 <div class="Ninpt">
                    
-                    <input type="text" class="inputtype" placeholder="*PASWORD" />
+                    <input type="text" class="inputtype" placeholder="*PASWORD" id="PASWORD"/>
                     
 
                 </div>
@@ -427,10 +440,10 @@
             </div>
             
             <div class="newaccount2">
-                <p>DON'T HAVE AN ACCOUNT?</p>
-                <p style="font-size: larger;color: black;">CONTINUE</p>
+                <p style="letter-spacing: 2px;">DON'T HAVE AN ACCOUNT?</p>
+                <p style="font-size: larger;color: black; cursor: pointer; letter-spacing: 3px;">CREATE & JOIN BB<span style="text-decoration: underline;">ACCESS</span></p>
                 <div class="inpt">
-                    <input type="text" class="inputtype" placeholder="*EMAIL ADDRESS" />
+                    <input type="text" class="inputtype" placeholder="*EMAIL ADDRESS" id="EMAIL_ADDRESS"/>
 
                 </div>
                 <div class="Ninpt">
@@ -504,7 +517,7 @@
 
         </div>
         <div class="Fbutton">
-            <button><i class="fa-brands fa-facebook" style="font-size: 25px; padding-right: 7px;"></i>  Continue With Facebook</button>
+            <button><i class="fa-brands fa-facebook" style="font-size: 25px; padding-right: 7px;"></i> <a href="https://www.facebook.com/">Continue With Facebook</a> </button>
         </div>
        
 
@@ -585,6 +598,45 @@
 
 
 <script>
+    var userDetails=JSON.parse(localStorage.getItem("userDetails"))||[]
+    function newlogin(){
+        var email_id = document.getElementById('email_id').value;
+        var PASWORD = document.getElementById('PASWORD').value;
+        var EMAIL_ADDRESS = document.getElementById('EMAIL_ADDRESS').value;
+        var pwd = document.getElementById('pwd').value;
+      
+        var obj = {
+            email_id:email_id,
+            PASWORD:PASWORD,
+            EMAIL_ADDRESS:EMAIL_ADDRESS,
+            pwd:pwd
+           
+        }
+        console.log(obj);
+         // getting all the users detail
+         var prePayload = window.localStorage.getItem('User');
+        // previous data is string so here converting in json format
+        prePayload = JSON.parse(prePayload);
+        // if there is record exsits the pushing into form data else creating new array and pushing into it.
+        if(prePayload){
+            prePayload.push(obj);
+        }else{
+            prePayload = [];
+            prePayload.push(obj);
+        }
+
+        prePayload = JSON.stringify(prePayload);
+
+        window.localStorage.setItem('User',prePayload);
+
+         document.getElementById('email_id').value = '';
+         document.getElementById('PASWORD').value = '';
+         document.getElementById('EMAIL_ADDRESS').value = '';
+         document.getElementById('pwd').value = '';
+        
+
+
+    }
     // show password 
 
     function showPassword(){
