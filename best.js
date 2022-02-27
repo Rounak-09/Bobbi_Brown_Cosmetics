@@ -269,8 +269,9 @@ document.querySelector("#body").append(head);
 // localStorage.setItem("Item",JSON.stringify(bobbibrowm));
 
 function addToCart(elem){
+  elem.quantity =1;
   cartArr.push(elem)
-  localStorage.setItem("Item",JSON.stringify(cartArr));
+  localStorage.setItem("cartItems",JSON.stringify(cartArr));
 }
           
 
