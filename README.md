@@ -13,3 +13,5 @@ The step by step process to use this website:-
 7. After successful checkout you will see a message order place successfully.
 
 This project is a team effort of 4 Masai School students Rounak, Manoj, Prabina and Kailash.
+
+Live project link - https://lucid-kilby-2ad2ec.netlify.app/
