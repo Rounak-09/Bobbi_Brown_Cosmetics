@@ -15,9 +15,17 @@ This project is a team effort of 4 Masai School students Rounak, Manoj, Prabina 
 
 Live project link - https://lucid-kilby-2ad2ec.netlify.app/
 
+## Some scrrenshots of website
+
 <img width="960" alt="2022-06-04 (6)" src="https://user-images.githubusercontent.com/100188131/171994687-bf5d91b3-c63f-44b8-98b1-b486100a34d8.png">
 <img width="960" alt="2022-06-04 (7)" src="https://user-images.githubusercontent.com/100188131/171994690-49fdee99-6749-4d7b-b7bf-232c4a218a21.png">
 <img width="960" alt="2022-06-04 (8)" src="https://user-images.githubusercontent.com/100188131/171994692-f4a27286-6e50-4db3-abb4-8fdf95354338.png">
 <img width="960" alt="2022-06-04 (9)" src="https://user-images.githubusercontent.com/100188131/171994695-aaf42421-6395-49f0-8e16-6338663f7996.png">
 <img width="960" alt="2022-06-04 (10)" src="https://user-images.githubusercontent.com/100188131/171994699-4cc03ed8-c0b8-4813-92a2-ebb33df32be7.png">
 <img width="960" alt="2022-06-04 (11)" src="https://user-images.githubusercontent.com/100188131/171994702-81382bec-f67f-4407-bfce-7dd66a0ffae8.png">
+
+## Collaborators
+* [Rounak Abraham](https://github.com/Rounak-09)
+* [Manoj Bhise](https://github.com/manojbhise)
+* [Prabina Chaudhary](https://github.com/Prabin8144)
+* [Kailash Jha](https://github.com/Jhakailash)
